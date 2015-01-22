@@ -1,0 +1,46 @@
+
+// -------------------- All sides -------------------- //
+
+.padding--l
+  padding: $padding-top--l $padding-right--s $padding-bottom--l $padding-left--s
+  +media-queries(medium)
+    padding: $padding-top--l--bpm $padding-right--s--bpm $padding-bottom--l--bpm $padding-left--s--bpm
+  +media-queries(s)
+    padding: $padding-top--l--bps $padding-right--s--bps $padding-bottom--l--bps $padding-left--s--bps
+
+.padding--m
+  padding: $padding-top--m $padding-right--s $padding-bottom--m $padding-left--s
+  @include media-queries(medium)
+    padding: $padding-top--m--bpm $padding-right--s--bpm $padding-bottom--m--bpm $padding-left--s--bpm
+  @include media-queries(small)
+    padding: $padding-top--m--bps $padding-right--s--bps $padding-bottom--m--bps $padding-left--s--bps
+
+.padding--s
+  padding: $padding-top--s $padding-right--s $padding-bottom--s $padding-left--s
+  @include media-queries(medium)
+    padding: $padding-top--s--bpm $padding-right--s--bpm $padding-bottom--s--bpm $padding-left--s--bpm
+  @include media-queries(small)
+    padding: $padding-top--s--bps $padding-right--s--bps $padding-bottom--s--bps $padding-left--s--bps
+
+.padding--xs
+  padding: 0 $padding-right--s 0 $padding-left--s
+  @include media-queries(medium)
+    padding: 0 $padding-right--s--bpm 0 $padding-left--s--bpm
+  @include media-queries(small)
+    padding: 0 $padding-right--s--bps 0 $padding-left--s--bps
+
+// -------------------- Top bottom only -------------------- //
+
+// .padding--tb--m
+//   padding: $padding-top--m 0 $padding-bottom--m 0
+//   @include media-queries(medium)
+//     padding: $padding-top--m--bpm 0 $padding-bottom--m--bpm 0
+//   @include media-queries(small)
+//     padding: $padding-top--m--bps 0 $padding-bottom--m--bps 0
+
+.padding--tb--s
+  padding: $padding-top--s 0 $padding-bottom--s 0
+  @include media-queries(medium)
+    padding: $padding-top--s--bpm 0 $padding-bottom--s--bpm 0
+  @include media-queries(small)
+    padding: $padding-top--s--bps 0 $padding-bottom--s--bps 0

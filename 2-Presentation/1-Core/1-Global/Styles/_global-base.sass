@@ -1,0 +1,95 @@
+
+// -------------------- Root -------------------- //
+
+*
+  box-sizing: border-box
+
+html
+  -ms-overflow-style: none
+  -ms-touch-action: manipulation
+  touch-action: manipulation
+
+body
+  background: $grey--lightest url('../images/background.jpg')
+  color: $black--light
+  font-family: $font-family--a
+  font-size: $font-size--base
+  line-height: $line-height--a
+  @include media-queries(medium)
+    font-size: $font-size--base--bpm
+  @include media-queries(small)
+    font-size: $font-size--base--bps
+
+
+// -------------------- Headings -------------------- //
+
+h1, h2, h3
+  color: $black--lightest
+  font-weight: normal
+  display: block
+  width: 100%
+  font-family: $font-family--b
+  line-height: $line-height--b
+  margin: 0
+  margin: 0 0 $margin-bottom--s 0
+
+h1
+  font-size: $font-size--xl
+  margin-bottom: rem(30px)
+  +media-queries(medium)
+    font-size: $font-size--xl--bpm
+  +media-queries(small)
+    font-size: $font-size--xl--bps
+
+h2
+  font-size: $font-size--l
+  font-weight: 400
+  +media-queries(medium)
+    font-size: $font-size--l--bpm
+  +media-queries(small)
+    font-size: $font-size--l--bps
+
+h3
+  font-size: $font-size--base
+
+
+// -------------------- Links -------------------- //
+
+a
+  color: $blue
+  text-decoration: none
+  &:hover
+    color: $blue--light
+    text-decoration: underline
+
+
+// -------------------- Images -------------------- //
+
+img
+  max-width: 100%
+  height: auto
+
+
+// -------------------- Paragraphs -------------------- //
+
+p
+  color: $black--light
+  line-height: $line-height--a
+  font-size: $font-size--base
+  margin: 0 0 $margin-bottom--s 0
+  &:last-of-type
+    margin-bottom: 0
+  +media-queries(medium)
+    font-size: $font-size--base--bpm
+  +media-queries(small)
+    font-size: $font-size--base--bps
+
+
+// -------------------- Lists -------------------- //
+
+ul
+  margin: 0
+  padding: 0
+  -webkit-padding-start: 0
+  -ms-padding-start: 0
+  -moz-padding-start: 0

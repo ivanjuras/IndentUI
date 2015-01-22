@@ -1,0 +1,26 @@
+
+// -------------------- Hero block 1 -------------------- //
+
+.hero-block--a
+    text-align: center
+
+.hero-headline--a
+    font-size: $font-size--xl
+    font-weight: 300
+    line-height: $line-height--c
+    
+    +media-queries(medium)
+        font-size: $font-size--xl--bpm
+    +media-queries(small)
+        font-size: $font-size--xl--bps
+
+.hero-tagline--a
+    font-size: $font-size--l
+    font-weight: 300
+    &:last-child
+        margin-bottom: 0
+
+    +media-queries(medium)
+        font-size: $font-size--l--bpm
+    +media-queries(small)
+        font-size: $font-size--l--bps

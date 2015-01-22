@@ -1,0 +1,134 @@
+
+// -------------------- btn -------------------- //
+
+.btn
+  border: 0
+  border-radius: rem(7px)
+  display: inline-block
+  font-weight: 300
+  transition-duration: 0.3s
+  a 
+    display: block
+    text-decoration: none
+    color: $white
+    &:hover
+      color: $white
+      text-decoration: none
+  .fa-caret-down, 
+  .fa-caret-up
+    padding-left: rem(10px)
+    padding-right: rem(5px)    
+  .fa-caret-right 
+    padding-left: rem(15px)
+  +media-queries(medium)
+    display: block
+    text-align: center
+    max-width: 40%
+    margin: 0 auto
+  +media-queries(small)
+    display: block
+    text-align: center
+    width: 100%
+    margin: 0 auto
+
+// Size
+
+.btn--l 
+  font-size: $font-size--l
+  a
+    padding: rem(15px) rem(30px) rem(15px) rem(30px)
+  +media-queries(medium)
+    font-size: $font-size--l--bpm
+  +media-queries(small)
+    font-size: $font-size--l--bps
+
+.btn--m
+  font-size: $font-size--base
+  a
+    padding: rem(10px) rem(25px) rem(10px) rem(25px)
+  +media-queries(medium)
+    font-size: $font-size--base--bpm
+  +media-queries(small)
+    font-size: $font-size--base--bps
+
+// Colors
+
+.btn--a
+  background-color: $blue
+  border-bottom: 3px solid $blue--dark
+  &:hover,
+  &:active,
+  &:focus
+    background-color: $blue--dark
+
+.btn--b
+  background-color: $green
+  border-bottom: 3px solid $green--dark
+  &:hover,
+  &:active
+    background-color: $green--dark
+
+.btn--c
+  background-color: $red
+  border-bottom: 3px solid $red--dark
+  &:hover,
+  &:active
+    background-color: $red--dark
+
+// .btn--d
+//   background-color: $orange
+//   border-bottom: 3px solid $orange--dark
+//   &:hover,
+//   &:active
+//     background-color: $orange--dark
+
+
+// -------------------- btn--hamburger -------------------- //
+
+.btn--hamburger
+  border: 1px solid $grey--light
+  cursor: pointer
+  display: none
+  float: right
+  margin: rem(25px) rem(20px) rem(20px) 0
+  padding: rem(5px)
+  transition-duration: 0.5s
+  &:hover,
+  &:active,
+  &:focus
+    background: $grey--light
+  .fa-bars
+    padding-left: rem(10px)
+    font-size: $font-size--base
+    color: $grey--dark
+    +media-queries(small)
+      padding-left: rem(5px)
+  +media-queries(medium)
+    display: inline-block
+  +media-queries(small)
+    display: inline-block
+
+
+// -------------------- btn--to-top -------------------- //
+
+.btn--to-top
+  background: inherit
+  border: 1px solid $grey
+  display: none
+  position: fixed
+  bottom: rem(40px)
+  right: rem(40px)
+  &:hover
+    background: $grey--dark
+  .fa-chevron-up
+    font-size: $font-size--s
+    padding: rem(10px) rem(15px)
+    color: $grey
+    &:hover
+      color: $white
+  +media-queries(medium)
+    bottom: rem(20px)
+    right: rem(20px)
+  +media-queries(small)
+    bottom: rem(20px)
+    right: rem(20px)

@@ -1,0 +1,43 @@
+
+// ---------- tab-menu--a ----------- //
+
+
+.tab-menu--a
+    display: inline-block
+    width: 100%
+
+.tab-links--a:after
+    content: ""
+    display: table
+    clear: both
+
+.tab-item--a
+    border-color: $grey--light
+    border-style: solid
+    border-width: rem(1px) rem(1px) 0 rem(1px);
+    float: left
+    list-style: none
+    margin: 0 rem(10px)
+    a
+        background: inherit
+        display: inline-block
+        padding: rem(10px) rem(10px)
+        transition: all linear 0.15s
+        &:hover
+            background: $grey--light
+            text-decoration: none
+    &.is-active
+        background: $white
+    &:first-of-type
+        margin-left: 0
+
+.tab-content--a
+    padding: rem(15px)
+    background: $white
+    border: rem(1px) solid $grey--light
+
+.tab
+    display: none
+
+.tab.is-active
+    display: block

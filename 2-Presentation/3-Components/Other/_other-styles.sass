@@ -1,0 +1,38 @@
+
+// -------------------- hero-block--a style -------------------- //
+
+.hero-block--a
+    text-align: center
+
+.hero-headline--a
+    font-size: $font-size--xl
+    font-weight: 300
+    line-height: $line-height--c
+    +media-queries(medium)
+        font-size: $font-size--xl--bpm
+    +media-queries(small)
+        font-size: $font-size--xl--bps
+
+.hero-tagline--a
+    font-size: $font-size--l
+    font-weight: 300
+    &:last-child
+        margin-bottom: 0
+    +media-queries(medium)
+        font-size: $font-size--l--bpm
+    +media-queries(small)
+        font-size: $font-size--l--b
+
+
+// -------------------- logo-block--a style -------------------- //
+
+.logo-block--a
+    display: inline-block
+    line-height: 1
+    text-align: left
+    padding: rem(20px) 0 rem(20px) $padding-left--s
+    +media-queries(medium)
+        text-align: center
+    +media-queries(small)
+        text-align: center
+        padding-left: $padding-left--xs

@@ -3,7 +3,7 @@
 
 smoothScrolling = (breakpointMedium) ->
 
-  $("a[href*=#]:not([href=#])").on "click", (event) ->
+  $("a[href*=#]:not([href=#]):not([href*=#tab])").on "click", (event) ->
     event.preventDefault()
     if (navigator.userAgent.indexOf('MSIE') isnt -1 or navigator.appVersion.indexOf('Trident/') > 0) and $(window).width() < breakpointMedium
       $("html, body").scrollTop $(@.hash).offset().top
@@ -12,6 +12,5 @@ smoothScrolling = (breakpointMedium) ->
         scrollTop: $(@.hash).offset().top
       ,
       500
-    console.log(nepostojim)
 
 smoothScrolling 1080

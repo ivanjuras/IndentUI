@@ -8,7 +8,7 @@
 
 // -------------------- Media queries -------------------- //
 
-$breakpoint--s  : rem(400px);
+$breakpoint--s  : rem(500px);
 $breakpoint--m  : rem(1100px);
 
 @mixin media-queries($break) {

@@ -29,35 +29,38 @@ h1, h2, h3
   margin-top: 0
 
 h1
-  font-size: $font-size--xl
-  font-weight: 400
+  font-size: $font-size--xxl
+  font-weight: 300
   margin-bottom: rem(40px)
+  +media-queries(medium)
+    font-size: $font-size--xxl--bpm
+  +media-queries(small)
+    font-size: $font-size--xxl--bps
+
+h2
+  font-size: $font-size--xl
+  font-weight: 300
   +media-queries(medium)
     font-size: $font-size--xl--bpm
   +media-queries(small)
     font-size: $font-size--xl--bps
 
-h2
+h3
   font-size: $font-size--l
-  font-weight: 400
-  margin-top: rem(50px)
+  font-weight: 300
   +media-queries(medium)
     font-size: $font-size--l--bpm
   +media-queries(small)
     font-size: $font-size--l--bps
 
-h3
-  font-size: $font-size--base
-
 
 // -------------------- Links -------------------- //
 
 a
-  color: $blue
-  text-decoration: none
+  color: $red
+  text-decoration: underline
   &:hover
-    color: $blue--light
-    text-decoration: underline
+    color: $red--dark
 
 
 // -------------------- Images -------------------- //
@@ -74,8 +77,6 @@ p
   font-size: $font-size--base
   line-height: $line-height--a
   margin: 0 0 $margin-bottom--s 0
-  &:last-of-type
-    margin-bottom: 0
   +media-queries(medium)
     font-size: $font-size--base--bpm
   +media-queries(small)

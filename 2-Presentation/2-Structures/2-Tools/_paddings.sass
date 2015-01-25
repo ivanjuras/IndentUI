@@ -5,7 +5,7 @@
   padding: $padding-top--l $padding-right--s $padding-bottom--l $padding-left--s
   +media-queries(medium)
     padding: $padding-top--l--bpm $padding-right--s--bpm $padding-bottom--l--bpm $padding-left--s--bpm
-  +media-queries(s)
+  +media-queries(small)
     padding: $padding-top--l--bps $padding-right--s--bps $padding-bottom--l--bps $padding-left--s--bps
 
 .padding--m
@@ -38,9 +38,19 @@
 //   @include media-queries(small)
 //     padding: $padding-top--m--bps 0 $padding-bottom--m--bps 0
 
-.padding--tb--s
+.padding--top-bottom--s
   padding: $padding-top--s 0 $padding-bottom--s 0
   @include media-queries(medium)
     padding: $padding-top--s--bpm 0 $padding-bottom--s--bpm 0
   @include media-queries(small)
     padding: $padding-top--s--bps 0 $padding-bottom--s--bps 0
+
+
+// -------------------- Bottom only -------------------- //
+
+.padding-bottom--l
+  padding-bottom: $padding-bottom--l
+  @include media-queries(medium)
+    padding-bottom: $padding-bottom--l--bpm
+  @include media-queries(small)
+    padding-bottom: $padding-bottom--l--bps

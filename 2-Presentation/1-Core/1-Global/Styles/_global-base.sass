@@ -26,12 +26,11 @@ h1, h2, h3
   color: $black--lightest
   font-family: $font-family--b
   line-height: $line-height--c
-  margin-top: 0
+  margin: 0
 
 h1
   font-size: $font-size--xxl
   font-weight: 300
-  margin-bottom: rem(40px)
   +media-queries(medium)
     font-size: $font-size--xxl--bpm
   +media-queries(small)
@@ -40,6 +39,7 @@ h1
 h2
   font-size: $font-size--xl
   font-weight: 300
+  margin-bottom: 0
   +media-queries(medium)
     font-size: $font-size--xl--bpm
   +media-queries(small)
@@ -48,6 +48,7 @@ h2
 h3
   font-size: $font-size--l
   font-weight: 300
+  margin-bottom: 0
   +media-queries(medium)
     font-size: $font-size--l--bpm
   +media-queries(small)
@@ -76,11 +77,13 @@ p
   color: $black--light
   font-size: $font-size--base
   line-height: $line-height--a
-  margin: 0 0 $margin-bottom--s 0
+  margin-bottom: $margin-bottom--s
   +media-queries(medium)
     font-size: $font-size--base--bpm
+    margin-bottom: $margin-bottom--s--bpm
   +media-queries(small)
     font-size: $font-size--base--bps
+    margin-bottom: $margin-bottom--s--bps
 
 
 // -------------------- Lists -------------------- //

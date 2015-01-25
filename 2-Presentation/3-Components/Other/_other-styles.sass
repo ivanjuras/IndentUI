@@ -9,21 +9,25 @@
   font-size: $font-size--xxl
   font-weight: 300
   line-height: $line-height--c
+  margin-bottom: $margin-bottom--s
   +media-queries(medium)
     font-size: $font-size--xxl--bpm
+    margin-bottom: $margin-bottom--s--bpm
   +media-queries(small)
     font-size: $font-size--xxl--bps
+    margin-bottom: $margin-bottom--s--bps
     
 
 .hero-tagline--a
   font-size: $font-size--xl
   font-weight: 300
-  &:last-child
-    margin-bottom: 0
+  margin-bottom: $margin-bottom--s
   +media-queries(medium)
     font-size: $font-size--xl--bpm
+    margin-bottom: $margin-bottom--s--bpm
   +media-queries(small)
     font-size: $font-size--xl--bps
+    margin-bottom: $margin-bottom--s--bps
 
 
 // -------------------- logo-block--a style -------------------- //
@@ -32,7 +36,7 @@
   display: inline-block
   line-height: 1
   text-align: left
-  padding: rem(30px) $padding-right--s $padding-bottom--s 0
+  padding: rem(25px) $padding-right--s 0 0
   +media-queries(medium)
     text-align: center
     margin-left: $padding-left--s

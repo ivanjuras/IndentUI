@@ -31,6 +31,12 @@ h1, h2, h3
 h1
   font-size: $font-size--xxl
   font-weight: 300
+  &.title
+    margin-bottom: $margin-bottom--m
+    +media-queries(medium)
+      font-size: $margin-bottom--m--bpm
+    +media-queries(small)
+      font-size: $margin-bottom--m--bps
   +media-queries(medium)
     font-size: $font-size--xxl--bpm
   +media-queries(small)
@@ -38,8 +44,11 @@ h1
 
 h2
   font-size: $font-size--xl
-  font-weight: 300
   margin-bottom: 0
+  font-weight: 300
+  &.subtitle
+    font-weight: 400
+    margin-top: rem(40px)
   +media-queries(medium)
     font-size: $font-size--xl--bpm
   +media-queries(small)

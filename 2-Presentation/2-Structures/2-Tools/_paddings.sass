@@ -1,6 +1,13 @@
 
 // -------------------- All sides -------------------- //
 
+.padding--xl
+  padding: $padding-top--xl $padding-right--s $padding-bottom--xl $padding-left--s
+  +media-queries(medium)
+    padding: $padding-top--xl--bpm $padding-right--s--bpm $padding-bottom--xl--bpm $padding-left--s--bpm
+  +media-queries(small)
+    padding: $padding-top--xl--bps $padding-right--s--bps $padding-bottom--xl--bps $padding-left--s--bps
+
 .padding--l
   padding: $padding-top--l $padding-right--s $padding-bottom--l $padding-left--s
   +media-queries(medium)

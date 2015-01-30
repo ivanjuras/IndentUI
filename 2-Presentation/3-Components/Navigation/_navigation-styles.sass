@@ -4,9 +4,9 @@
 
 .nav-menu--a
   display: block
-  list-style: none
   float: right
   height: 100%
+  list-style: none
   overflow: hidden
   +media-queries(medium)
     display: none
@@ -29,20 +29,20 @@
   &:last-of-type
     padding-right: 0
   +media-queries(medium)
+    border-bottom: 1px solid $grey--light
     display: block
     text-align: center
-    border-bottom: 1px solid $grey--light
     padding: rem(12px) 0
     &:first-child
       border-top: 1px solid $grey--light
     &:last-of-type
-      padding-right: 0
       border-bottom: 0
+      padding-right: 0
   +media-queries(small)
+    border-bottom: 1px solid $grey--light
     display: block
     text-align: center
     padding: rem(12px) 0
-    border-bottom: 1px solid $grey--light
     &:first-child
       border-top: 1px solid $grey--light
     &:last-of-type

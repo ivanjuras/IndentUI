@@ -8,9 +8,6 @@
 
 // -------------------- Media queries -------------------- //
 
-$breakpoint--s  : rem(600px);
-$breakpoint--m  : rem(1100px);
-
 @mixin media-queries($break) {
   @if $break == "small" {
     @media (max-width: $breakpoint--s) {

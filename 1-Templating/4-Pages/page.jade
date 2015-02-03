@@ -1,0 +1,27 @@
+extends ../3-Templates/template-index
+
+append config
+  - pageTitle = "This is page 2"
+  - metaDesc = "This is the description for the page2."
+
+block main-content
+  
+  .row--a
+
+    .col--4
+
+      h2  Customizable
+
+      p <a href="#">IndentUI</a> is a fully customizable Front-End framework. You can build whatever UI you like, and still save an enormous amount of time.
+
+    .col--4
+
+      h2  Readable
+
+      p Built exclusively with indented syntax, the code is extremely readable and short. It uses Jade for HTML templating, Sass for CSS and CoffeeScript for behavior.
+
+    .col--4
+
+      h2  Performant
+
+      p The final product is fast and performant. You end up with concatenated and minifed HTML, CSS and JavaScript files. Also, there is no bloat and all files are very small.

@@ -4,7 +4,10 @@ block config
 doctype html
 <html lang="en">
 head
-  title #{titleTage}
+  if titleTag !== undefined
+    title #{titleTag}
+  else
+    title #{pageTitle}
   meta(charset="utf-8")
   meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=no")
   meta(name="google-site-verification" content=googleWMTValidate)
@@ -15,4 +18,5 @@ head
   link(rel="stylesheet", href="//fonts.googleapis.com/css?family=Lato:400italic,400,700,300")
   link(rel="stylesheet", href="/assets/css/style.css")
   include core-analytics
+  block ABtesting
 <body>

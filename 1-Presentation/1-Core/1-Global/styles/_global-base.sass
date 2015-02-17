@@ -22,7 +22,7 @@ body
 
 // -------------------- Headings -------------------- //
 
-h1, h2, h3
+h1, h2, h3, h4
   color: $black--lightest
   font-family: $font-family--b
   line-height: $line-height--c
@@ -31,12 +31,12 @@ h1, h2, h3
 h1
   font-size: $font-size--xxl
   font-weight: 300
-  &.title
-    margin-bottom: $margin-bottom--m
+  &.post-title
+    margin-bottom: $margin-bottom--xs
     +media-queries(medium)
-      font-size: $margin-bottom--m--bpm
+      margin-bottom: $margin-bottom--xs--bpm
     +media-queries(small)
-      font-size: $margin-bottom--m--bps
+      margin-bottom: $margin-bottom--xs--bps
   +media-queries(medium)
     font-size: $font-size--xxl--bpm
   +media-queries(small)
@@ -62,6 +62,23 @@ h3
     font-size: $font-size--l--bpm
   +media-queries(small)
     font-size: $font-size--l--bps
+
+h4
+  font-size: $font-size--xs
+  font-family: $font-family--a
+  font-weight: 400
+  margin-bottom: 0
+  &.post-date
+    margin-bottom: $margin-bottom--m
+    color: $grey
+    +media-queries(medium)
+      margin-bottom: $margin-bottom--m--bpm
+    +media-queries(small)
+      margin-bottom: $margin-bottom--m--bps
+  +media-queries(medium)
+    font-size: $font-size--xs--bpm
+  +media-queries(small)
+    font-size: $font-size--xs--bps
 
 
 // -------------------- Links -------------------- //

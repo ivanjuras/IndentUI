@@ -13,4 +13,4 @@ smoothScrolling = (breakpointMedium) ->
       ,
       500
 
-smoothScrolling 1080
+smoothScrolling 1180

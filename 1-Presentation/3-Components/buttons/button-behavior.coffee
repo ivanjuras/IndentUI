@@ -1,10 +1,10 @@
 
 # -------------------- btn--to-top behavior -------------------- #
 
-scrolltoTop = (breakpointMedium) ->
+scrolltoTop = ( breakpointMedium ) ->
 
   $(window).scroll ->
-    if ($(window).scrollTop() > 150) and($(window).width() < breakpointMedium)
+    if ($(window).scrollTop() > 150) and ($(window).width() < breakpointMedium)
       $(".btn--to-top").fadeIn(500)
     else
       $(".btn--to-top").fadeOut(500)
@@ -18,14 +18,14 @@ scrolltoTop = (breakpointMedium) ->
       ,
       500
       
-scrolltoTop 1080
+scrolltoTop( 1180 ) 
 
 
 # -------------------- btn--hamburger behavior -------------------- #
 
-hamburgerButtonClick = (hamburgerButton, navMenu) ->
+hamburgerButtonClick = ( hamburgerButton, navMenu ) ->
   
   hamburgerButton.on "click", ->
     navMenu.toggle(400)
 
-hamburgerButtonClick $(".btn--hamburger"), $(".nav-menu--a")
+hamburgerButtonClick( $(".btn--hamburger"), $(".nav-menu--a") )

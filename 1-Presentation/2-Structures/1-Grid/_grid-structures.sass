@@ -1,13 +1,14 @@
 
-
 // -------------------- Rows -------------------- //
 
 .row--a
   +outer-container()
-  +clearfix
 
 .row--b
   +outer-container(100%)
+
+.row--c
+  +outer-container( rem(800px) )
 
 // -------------------- Columns -------------------- //
 
@@ -35,7 +36,7 @@
 .col--6
   +span-columns(6)
   +media($grid-breakpoint--m)
-    +span-columns(4)
+    +span-columns(8)
   +media($grid-breakpoint--s)
     +span-columns(4)
 

@@ -1,0 +1,55 @@
+extends ../1-Templating/3-Templates/template-index
+
+append config
+  
+  - pageTitle = "Indent UI : A Responsive Framework for Websites and Web Apps"
+  - metaDesc = "A fully customizable framework that makes it easy for you to build web sites and web apps."
+
+block main-content
+  
+  #features.row--a
+
+    .col--4
+  
+      h2  Customizable
+
+      p <a href="#">IndentUI</a> is a fully customizable Front-End framework. You can build whatever UI you like, and still save an enormous amount of time. <a href="/posts/post/">Link to the first post</a>
+
+    .col--4
+
+      h2  Readable
+
+      p Built exclusively with indented syntax, the code is extremely readable and short. It uses Jade for HTML templating, Sass for CSS and CoffeeScript for behavior.<a href="/page/">Link to the page</a>
+
+    .col--4
+
+      h2  Readable
+
+      p Built exclusively with indented syntax, the code is extremely readable and short. It uses Jade for HTML templating, Sass for CSS and CoffeeScript for behavior.<a href="/page/">Link to the page</a>
+
+  .row--a
+
+    .col--12
+
+      .tab-menu--a
+
+        ul.tab-links--a
+          
+          li.tab-item--a.is-active: a(href="#tab1") Tab #1
+          li.tab-item--a: a(href="#tab2") Tab #2
+          li.tab-item--a: a(href="#tab3") Tab #3
+          li.tab-item--a: a(href="#tab4") Tab #4
+
+        .tab-content--a
+            
+          #tab1.tab.is-active
+            p Tab #1 content here
+
+          #tab2.tab
+            p Tab #2 content here
+
+          #tab3.tab
+            p Tab #3 content here
+
+          #tab4.tab
+            p Tab #4 content here

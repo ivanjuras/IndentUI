@@ -1,0 +1,55 @@
+
+// -------------------- 1-Core/1-Global -------------------- //
+
+@import "1-Core/1-Global/global-helpers"
+@import "1-Core/1-Global/global-config"
+@import "1-Core/1-Global/global-normalize"
+@import "1-Core/1-Global/global-base"
+
+
+// -------------------- 1-Core/2-Plugins -------------------- //
+
+@import "1-Core/2-Plugins/bourbon/bourbon"
+@import "1-Core/2-Plugins/font-awesome/font-awesome"
+
+
+// -------------------- 2-Structures/1-Grid -------------------- //
+
+@import "2-Structures/1-Grid/grid-settings"
+@import "2-Structures/1-Grid/neat/neat"
+@import "2-Structures/1-Grid/grid-structures"
+
+
+// -------------------- 2-Structures/2-Tools -------------------- //
+
+@import "2-Structures/2-Tools/alignments"
+@import "2-Structures/2-Tools/color-patterns"
+@import "2-Structures/2-Tools/paddings"
+
+
+// -------------------- 3-Components -------------------- //
+
+@import "3-Components/button-styles"
+@import "3-Components/icons-styles"
+@import "3-Components/navigation-styles"
+@import "3-Components/tabs-styles"
+@import "3-Components/search-styles"
+@import "3-Components/other-styles"
+
+
+// -------------------- ADDITIONAL STYLES -------------------- //
+
+.profile
+  background: url('../images/IvanJuras.png') no-repeat
+  border: 1px solid $grey--light
+  border-radius: 50%
+  background-size: cover
+  width: rem(250px)
+  height: rem(250px)
+  margin: 0 auto $margin-bottom--s auto
+  +media-queries(medium)
+    width: rem(200px)
+    height: rem(200px)
+  +media-queries(small)
+    width: rem(150px)
+    height: rem(150px)

@@ -1,0 +1,18 @@
+include ../1-Core/core-config
+doctype xml
+rss(version="2.0", xmlns:atom="http://www.w3.org/2005/Atom")
+  
+  channel
+      atom:link(href="#{siteUrl}/feed.xml", rel="self", type="application/rss+xml")
+      title #{siteTitle} 
+      link #{siteUrl}
+      description An RSS Feed Description
+      pubDate Sun, 1 Feb 2015 21:17:00 GMT
+
+      for item in metadata
+        item
+          title= item.title
+          link= siteUrl + item.url
+          description= item.description
+          pubDate= item.date
+     

@@ -3,7 +3,7 @@
 
 .btn
   border: 0
-  border-radius: rem(7px)
+  border-radius: rem(4px)
   display: inline-block
   font-weight: 300
   transition-duration: 0.4s
@@ -31,18 +31,19 @@
   .fa-caret-right 
     padding-left: rem(15px)
 
-// Size
 
-.btn--l 
-  font-size: $font-size--l
-  a
-    padding: rem(15px) rem(30px) rem(15px) rem(30px)
-  +media-queries(medium)
-    font-size: $font-size--l--bpm
-  +media-queries(small)
-    font-size: $font-size--l--bps
+  // ----- Size ----- //
 
-.btn--m
+  &.hero 
+    font-size: $font-size--l
+    a
+      padding: rem(15px) rem(30px) rem(15px) rem(30px)
+    +media-queries(medium)
+      font-size: $font-size--l--bpm
+    +media-queries(small)
+      font-size: $font-size--l--bps
+
+  &.standard
   font-size: $font-size--base
   a
     padding: rem(10px) rem(25px) rem(10px) rem(25px)
@@ -51,36 +52,40 @@
   +media-queries(small)
     font-size: $font-size--base--bps
 
-// Colors
 
-.btn--a
-  background-color: $blue
-  border-bottom: 3px solid $blue--dark
-  &:hover,
-  &:active,
-  &:focus
-    background-color: $blue--dark
+  // ----- Colors ----- //
 
-.btn--b
-  background-color: $green
-  border-bottom: 3px solid $green--dark
-  &:hover,
-  &:active
-    background-color: $green--dark
+  &.red
+    background-color: $red
+    border-bottom: 3px solid $red--dark
+    &:hover,
+    &:active,
+    &:focus
+      background-color: $red--dark
 
-.btn--c
-  background-color: $red
-  border-bottom: 3px solid $red--dark
-  &:hover,
-  &:active
-    background-color: $red--dark
+  &.blue
+    background-color: $blue
+    border-bottom: 3px solid $blue--dark
+    &:hover,
+    &:active,
+    &:focus
+      background-color: $blue--dark
 
-// .btn--d
-//   background-color: $orange
-//   border-bottom: 3px solid $orange--dark
-//   &:hover,
-//   &:active
-//     background-color: $orange--dark
+  &.green
+    background-color: $green
+    border-bottom: 3px solid $green--dark
+    &:hover,
+    &:active,
+    &:focus
+      background-color: $green--dark
+
+  &.orange
+    background-color: $orange
+    border-bottom: 3px solid $orange--dark
+    &:hover,
+    &:active,
+    &:focus
+      background-color: $orange--dark
 
 
 // -------------------- btn--hamburger -------------------- //

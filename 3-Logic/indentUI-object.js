@@ -12,6 +12,8 @@
 		// On click - smooth scrolling
 		smoothScrolling: function() {
 
+			var scrollSpeed = 500;
+
 			$('a[href*=#]:not([href=#]):not([href*=#tab])').on( 'click', function(e) {
 				e.preventDefault();
 				$('html, body').animate( {scrollTop: $(this.hash).offset().top} , scrollSpeed );

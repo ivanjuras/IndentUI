@@ -200,4 +200,4 @@ function handleErrors( error ) {
 
 
 // -------------------- Run all tasks -------------------- //
-gulp.task('default', ['webserver', 'styles', 'scripts', 'pages']);
+gulp.task('default', ['pages', 'styles', 'scripts', 'xmlFiles', 'static', 'pages']);

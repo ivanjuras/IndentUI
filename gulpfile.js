@@ -14,7 +14,8 @@ var gulp = require('gulp'),
 		ftp = require('vinyl-ftp'),
 		rename = require('gulp-rename'),
 		prettyURL = require('gulp-pretty-url'),
-		order = require('gulp-order')
+		order = require('gulp-order'),
+		del = require('del')
 
 
 // -------------------- Output paths -------------------- //
@@ -149,6 +150,17 @@ gulp.task('static', function() {
 
 });
 
+// -------------------- Delete the 6-Production folder -------------------- //
+gulp.task('deleteProd', function() {
+
+	console.log( 'Starting - delete the 6-Production folder' );
+
+	del([
+		publicDir
+	]);
+
+});
+
 
 // -------------------- Deploy online (FTP) -------------------- //
 gulp.task('deploy', function() {
@@ -200,4 +212,4 @@ function handleErrors( error ) {
 
 
 // -------------------- Run all tasks -------------------- //
-gulp.task('default', ['pages', 'styles', 'scripts', 'xmlFiles', 'static', 'pages']);
+gulp.task( 'default', [ 'pages', 'styles', 'scripts', 'xmlFiles', 'static', 'pages', 'deleteProd' ] );

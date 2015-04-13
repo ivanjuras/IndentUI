@@ -30,23 +30,23 @@ h1, h2, h3, h4
 
 h1
   font-size: $font-size--xxl
-  font-weight: 300
-  &.post-title
-    margin-bottom: $margin-bottom--xs
-    +media-queries(medium)
-      margin-bottom: $margin-bottom--xs--bpm
-    +media-queries(small)
-      margin-bottom: $margin-bottom--xs--bps
   +media-queries(medium)
     font-size: $font-size--xxl--bpm
   +media-queries(small)
     font-size: $font-size--xxl--bps
 
+  &.Post-title
+    font-weight: 400
+    margin-bottom: $margin-bottom--xs
+    +media-queries(medium)
+      margin-bottom: $margin-bottom--xs--bpm
+    +media-queries(small)
+      margin-bottom: $margin-bottom--xs--bps
+  
 h2
   font-size: $font-size--xl
-  font-weight: 300
   margin-bottom: 0
-  &.subtitle
+  &.Subtitle
     font-weight: 400
     margin-top: rem(40px)
   +media-queries(medium)
@@ -66,19 +66,20 @@ h3
 h4
   font-size: $font-size--xs
   font-family: $font-family--a
-  font-weight: 400
   margin-bottom: 0
-  &.post-date
+  +media-queries(medium)
+    font-size: $font-size--xs--bpm
+  +media-queries(small)
+    font-size: $font-size--xs--bps
+
+  &.Post-date
+    font-weight: 400
     margin-bottom: $margin-bottom--m
     color: $grey
     +media-queries(medium)
       margin-bottom: $margin-bottom--m--bpm
     +media-queries(small)
       margin-bottom: $margin-bottom--m--bps
-  +media-queries(medium)
-    font-size: $font-size--xs--bpm
-  +media-queries(small)
-    font-size: $font-size--xs--bps
 
 
 // -------------------- Links -------------------- //

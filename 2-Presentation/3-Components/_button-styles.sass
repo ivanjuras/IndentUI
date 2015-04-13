@@ -1,7 +1,7 @@
 
 // -------------------- btn -------------------- //
 
-.btn
+.Button
   border: 0
   border-radius: rem(4px)
   display: inline-block
@@ -32,18 +32,18 @@
     padding-left: rem(15px)
 
 
-  // ----- Size ----- //
+// ----- Size ----- //
 
-  &.hero 
-    font-size: $font-size--l
-    a
-      padding: rem(15px) rem(30px) rem(15px) rem(30px)
-    +media-queries(medium)
-      font-size: $font-size--l--bpm
-    +media-queries(small)
-      font-size: $font-size--l--bps
+.Button--xl 
+  font-size: $font-size--l
+  a
+    padding: rem(15px) rem(30px) rem(15px) rem(30px)
+  +media-queries(medium)
+    font-size: $font-size--l--bpm
+  +media-queries(small)
+    font-size: $font-size--l--bps
 
-  &.standard
+.Button--m
   font-size: $font-size--base
   a
     padding: rem(10px) rem(25px) rem(10px) rem(25px)
@@ -53,44 +53,44 @@
     font-size: $font-size--base--bps
 
 
-  // ----- Colors ----- //
+// ----- Colors ----- //
 
-  &.red
-    background-color: $red
-    border-bottom: 3px solid $red--dark
-    &:hover,
-    &:active,
-    &:focus
-      background-color: $red--dark
+.Button--red
+  background-color: $red
+  border-bottom: 3px solid $red--dark
+  &:hover,
+  &:active,
+  &:focus
+    background-color: $red--dark
 
-  &.blue
-    background-color: $blue
-    border-bottom: 3px solid $blue--dark
-    &:hover,
-    &:active,
-    &:focus
-      background-color: $blue--dark
+.Button--blue
+  background-color: $blue
+  border-bottom: 3px solid $blue--dark
+  &:hover,
+  &:active,
+  &:focus
+    background-color: $blue--dark
 
-  &.green
-    background-color: $green
-    border-bottom: 3px solid $green--dark
-    &:hover,
-    &:active,
-    &:focus
-      background-color: $green--dark
+.Button--green
+  background-color: $green
+  border-bottom: 3px solid $green--dark
+  &:hover,
+  &:active,
+  &:focus
+    background-color: $green--dark
 
-  &.orange
-    background-color: $orange
-    border-bottom: 3px solid $orange--dark
-    &:hover,
-    &:active,
-    &:focus
-      background-color: $orange--dark
+.Button--orange
+  background-color: $orange
+  border-bottom: 3px solid $orange--dark
+  &:hover,
+  &:active,
+  &:focus
+    background-color: $orange--dark
 
 
 // -------------------- btn--hamburger -------------------- //
 
-.btn--hamburger
+.Button--hamburger
   border: 1px solid $grey--light
   cursor: pointer
   display: none
@@ -116,7 +116,7 @@
 
 // -------------------- btn--to-top -------------------- //
 
-.btn--to-top
+.Button--toTop
   background: inherit
   border: 1px solid $grey
   display: none

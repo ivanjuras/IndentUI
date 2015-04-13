@@ -24,13 +24,13 @@
 		// On click - button scroll to top
 		scrollTop: function() {
 
-			var $btnToTop = $( '.btn--to-top' ),
+			var $btnToTop = $( '.Button--toTop' ),
 					fadeInSpeed = 500,
 					fadeOutSpeed = 500,
 					toTopScrollSpeed = 500;
 
 			$global.scroll(function() {
-				if ( ($global.scrollTop() > 150 ) && ( $global.width() < breakpointMedium ) ) {
+				if ( ( $global.scrollTop() > 150 ) && ( $global.width() < breakpointMedium ) ) {
 					$btnToTop.fadeIn( fadeInSpeed );
 				} else {
 					$btnToTop.fadeOut( fadeOutSpeed );
@@ -46,8 +46,8 @@
 		// On click - hamburger button
 		hamburgerButtonClick: function() {
 
-			var $btnHamburger = $('.btn--hamburger'),
-					$navMenuA = $('.nav-menu--a'),
+			var $btnHamburger = $('.Button--hamburger'),
+					$navMenuA = $('.NavMenu'),
 					menuToggleSpeed = 400;
 			
 			$btnHamburger.on( 'click', function() {
@@ -59,8 +59,8 @@
 		// On click - tab menu
 		tabMenuOnClick: function() {
 
-			var $tabItem = $( '.tab-item--a' ),
-					$tabItemLink = $('.tab-item--a a'),
+			var $tabItem = $( '.TabItem' ),
+					$tabItemLink = $('.TabItem-link'),
 					fadeInSpeed = 400,
 					isActiveClass = 'is-active';
 
@@ -77,7 +77,7 @@
 		// On resize - show hide navigation menu a 
 		showHideNavMenu: function() {
 
-			var $navMenuA = $('.nav-menu--a');
+			var $navMenuA = $('.NavMenu');
 			
 			$global.on( 'resize', function() {
 				if ( $(this).width() >= breakpointMedium ) {

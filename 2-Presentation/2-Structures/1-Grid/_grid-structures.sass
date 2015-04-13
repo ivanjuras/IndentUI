@@ -1,53 +1,53 @@
 
 // -------------------- Rows -------------------- //
 
-.row--a
+.Row--a
   +outer-container()
 
-.row--b
-  +outer-container(100%)
+.Row--b
+  +outer-container( 100% )
 
-.row--c
-  +outer-container( rem(800px) )
+.Row--c
+  +outer-container( rem( 800px ) )
 
 // -------------------- Columns -------------------- //
 
-.col--12
+.Column--12
   +span-columns(12)
   +media($grid-breakpoint--m)
     +span-columns(8)
   +media($grid-breakpoint--s)
     +span-columns(4)
 
-.col--9
+.Column--9
   +span-columns(9)
   +media($grid-breakpoint--m)
     +span-columns(8)
   +media($grid-breakpoint--s)
     +span-columns(4)
 
-.col--8
+.Column--8
   +span-columns(8)
   +media($grid-breakpoint--m)
     +span-columns(8)
   +media($grid-breakpoint--s)
     +span-columns(4)
 
-.col--6
+.Column--6
   +span-columns(6)
   +media($grid-breakpoint--m)
     +span-columns(8)
   +media($grid-breakpoint--s)
     +span-columns(4)
 
-.col--4
+.Column--4
   +span-columns(4)
   +media($grid-breakpoint--m)
     +span-columns(8)
   +media($grid-breakpoint--s)
     +span-columns(4)
 
-.col--3
+.Column--3
   +span-columns(3)
   +media($grid-breakpoint--m)
     +span-columns(8)

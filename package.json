@@ -9,7 +9,7 @@
   "author": "Ivan Juras",
   "license": "ISC",
   "devDependencies": {
-    "del": "^1.1.1",
+    "del": "*",
     "gulp": "*",
     "gulp-autoprefixer": "*",
     "gulp-connect": "*",

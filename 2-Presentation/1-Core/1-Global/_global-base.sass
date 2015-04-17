@@ -14,9 +14,9 @@ body
   color: $black--light
   font-family: $font-family--a
   font-size: $font-size--base
-  @include media-queries(medium)
+  +media-queries( medium )
     font-size: $font-size--base--bpm
-  @include media-queries(small)
+  +media-queries( small )
     font-size: $font-size--base--bps
 
 
@@ -30,45 +30,45 @@ h1, h2, h3, h4
 
 h1
   font-size: $font-size--xxl
-  +media-queries(medium)
+  +media-queries( medium )
     font-size: $font-size--xxl--bpm
-  +media-queries(small)
+  +media-queries( small )
     font-size: $font-size--xxl--bps
 
   &.Post-title
     font-weight: 400
     margin-bottom: $margin-bottom--xs
-    +media-queries(medium)
+    +media-queries( medium )
       margin-bottom: $margin-bottom--xs--bpm
-    +media-queries(small)
+    +media-queries( small )
       margin-bottom: $margin-bottom--xs--bps
   
 h2
   font-size: $font-size--l
   font-weight: 300
   &.Subtitle
-    margin-top: rem(40px)
-  +media-queries(medium)
+    margin-top: rem( 40px )
+  +media-queries( medium )
     font-size: $font-size--l--bpm
-  +media-queries(small)
+  +media-queries( small )
     font-size: $font-size--l--bps
 
 h3
   font-size: $font-size--l
   font-weight: 300
   margin-bottom: 0
-  +media-queries(medium)
+  +media-queries( medium )
     font-size: $font-size--l--bpm
-  +media-queries(small)
+  +media-queries( small )
     font-size: $font-size--l--bps
 
 h4
   font-size: $font-size--xs
   font-family: $font-family--a
   margin-bottom: 0
-  +media-queries(medium)
+  +media-queries( medium )
     font-size: $font-size--xs--bpm
-  +media-queries(small)
+  +media-queries( small )
     font-size: $font-size--xs--bps
 
   &.Post-date

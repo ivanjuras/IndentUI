@@ -3,7 +3,7 @@
 
 .Button
   border: 0
-  border-radius: rem(4px)
+  border-radius: rem( 4px )
   display: inline-block
   transition-duration: 0.4s
   a 
@@ -15,22 +15,22 @@
     &:hover
       color: $white
       text-decoration: none
-  +media-queries(medium)
+  .fa-caret-down, 
+  .fa-caret-up
+    padding-left: rem( 10px )
+    padding-right: rem( 5px )    
+  .fa-caret-right 
+    padding-left: rem( 15px )
+  +media-queries( medium )
     display: block
     text-align: center
-    max-width: 58vw
+    max-width: 45vw
     margin: 0 auto
-  +media-queries(small)
+  +media-queries( small )
     display: block
     text-align: center
     width: 70vw
     margin: 0 auto
-  .fa-caret-down, 
-  .fa-caret-up
-    padding-left: rem(10px)
-    padding-right: rem(5px)    
-  .fa-caret-right 
-    padding-left: rem(15px)
 
 
 // ----- Size ----- //
@@ -38,10 +38,10 @@
 .Button--xl 
   font-size: $font-size--l
   a
-    padding: rem(15px) rem(30px) rem(15px) rem(30px)
-  +media-queries(medium)
+    padding: rem( 15px ) rem( 30px ) rem( 15px ) rem( 30px )
+  +media-queries( medium )
     font-size: $font-size--l--bpm
-  +media-queries(small)
+  +media-queries( small )
     font-size: $font-size--l--bps
 
 .Button--m
@@ -96,22 +96,22 @@
   cursor: pointer
   display: none
   float: right
-  margin: rem(15px) rem(20px) rem(15px) 0
-  padding: rem(5px)
+  margin: rem( 15px ) rem( 20px ) rem( 15px ) 0
+  padding: rem( 5px )
   transition-duration: 0.5s
   &:hover,
   &:active,
   &:focus
     background: $grey--light
   .fa-bars
-    padding-left: rem(10px)
+    padding-left: rem( 10px )
     font-size: $font-size--base
     color: $grey--dark
-    +media-queries(small)
-      padding-left: rem(5px)
-  +media-queries(medium)
+    +media-queries( small )
+      padding-left: rem( 5px )
+  +media-queries( medium )
     display: inline-block
-  +media-queries(small)
+  +media-queries( small )
     display: inline-block
 
 
@@ -122,19 +122,19 @@
   border: 1px solid $grey
   display: none
   position: fixed
-  bottom: rem(40px)
-  right: rem(40px)
+  bottom: rem( 40px )
+  right: rem( 40px )
   &:hover
     background: $grey--dark
   .fa-chevron-up
     font-size: $font-size--s
-    padding: rem(10px) rem(15px)
+    padding: rem( 10px ) rem( 15px )
     color: $grey
     &:hover
       color: $white
-  +media-queries(medium)
-    bottom: rem(20px)
-    right: rem(20px)
-  +media-queries(small)
-    bottom: rem(20px)
-    right: rem(20px)
+  +media-queries( medium )
+    bottom: rem( 20px )
+    right: rem( 20px )
+  +media-queries( small )
+    bottom: rem( 20px )
+    right: rem( 20px )

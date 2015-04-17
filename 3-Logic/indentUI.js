@@ -27,7 +27,7 @@
 			var $btnToTop = $( '.Button--toTop' ),
 					fadeInSpeed = 500,
 					fadeOutSpeed = 500,
-					toTopScrollSpeed = 500;
+					toTopScrollSpeed = 300;
 
 			$global.scroll(function() {
 				if ( ( $global.scrollTop() > 150 ) && ( $global.width() < breakpointMedium ) ) {
@@ -57,23 +57,23 @@
 		},
 
 		// On click - tab menu
-		tabMenuOnClick: function() {
+		// tabMenuOnClick: function() {
 
-			var $tabItem = $( '.TabMenu-tabItem' ),
-					$tabItemLink = $( '.TabMenu-tabLink' ),
-					tabContent = '.TabMenu-tabContent',
-					fadeInSpeed = 400,
-					isActiveClass = 'is-active';
+		// 	var $tabItem = $( '.TabMenu-tabItem' ),
+		// 			$tabItemLink = $( '.TabMenu-tabLink' ),
+		// 			tabContent = '.TabMenu-tabContent',
+		// 			fadeInSpeed = 400,
+		// 			isActiveClass = 'is-active';
 
-			$tabItemLink.on( 'click', function( e ) {
-				e.preventDefault();
-				var parentTabItem = $(this).parent( $tabItem ),
-						currentAttr = $(this).attr('href');
-				$( tabContent + currentAttr ).fadeIn( fadeInSpeed ).siblings().hide();
-				parentTabItem.addClass( isActiveClass ).siblings().removeClass( isActiveClass );
-			});
+		// 	$tabItemLink.on( 'click', function( e ) {
+		// 		e.preventDefault();
+		// 		var parentTabItem = $(this).parent( $tabItem ),
+		// 				currentAttr = $(this).attr('href');
+		// 		$( tabContent + currentAttr ).fadeIn( fadeInSpeed ).siblings().hide();
+		// 		parentTabItem.addClass( isActiveClass ).siblings().removeClass( isActiveClass );
+		// 	});
 
-		},
+		// },
 
 		// On resize - show hide navigation menu a 
 		showHideNavMenu: function() {

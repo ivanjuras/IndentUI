@@ -2,13 +2,16 @@
 // -------------------- Convert to rem -------------------- //
 
 @function rem($target, $context: 16px) {
+
   @return ($target / $context) * 1rem;
+
 }
 
 
 // -------------------- Media queries -------------------- //
 
 @mixin media-queries($break) {
+
   @if $break == "small" {
     @media (max-width: $breakpoint--s) {
       @content;
@@ -19,4 +22,5 @@
       @content;
     }
   }
+  
 }

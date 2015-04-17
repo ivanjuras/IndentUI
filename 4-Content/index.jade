@@ -7,28 +7,61 @@ append config
 
 block main-content
   
-  #features.row--a
+  #features.Container--standardL
 
-    .Column--4.TextAlign--center
+    .Row--a
+
+      .Column--4.u-centerText
+    
+        h2 Customizable
+
+        p <a href="#">IndentUI</a> is a fully customizable Front-End framework. You can build whatever UI you like, and still save an enormous amount of time. <a href="/posts/post/">Link to the first post</a>
+
+        .Button.Button--m.Button--orange: a(href="/nesto/") Click Here
+
+      .Column--4.u-centerText
+
+        h2 Readable
+
+        p Built exclusively with indented syntax, the code is extremely readable and short. It uses Jade for HTML templating, Sass for CSS and CoffeeScript for behavior. <a href="/page/">Link to the page</a>
+
+        .Button.Button--m.Button--green: a(href="/nesto2/") Click Here
+
+      .Column--4.u-centerText
+
+        h2 Performant
+
+        p The final product is fast and performant. You end up with concatenated and minifed HTML, CSS and JavaScript files. Also, there is no bloat and all files are very small.
+
+        .Button.Button--m.Button--blue: a(href="/nesto/") Click Here
   
-      h2  Customizable
+  #features.Container--lastL
 
-      p <a href="#">IndentUI</a> is a fully customizable Front-End framework. You can build whatever UI you like, and still save an enormous amount of time. <a href="/posts/post/">Link to the first post</a>
+    .Row--a
 
-      .Button.Button--m.Button--orange: a(href="/nesto/") Click Here
+      .Column--12
 
-    .Column--4.TextAlign--center
+        .TabMenu
 
-      h2  Readable
+          ul.TabMenu-tabList
+            
+            li.TabMenu-tabItem.is-active: a.TabMenu-tabLink(href="#tab1") Tab #1
+            li.TabMenu-tabItem: a.TabMenu-tabLink(href="#tab2") Tab #2
+            li.TabMenu-tabItem: a.TabMenu-tabLink(href="#tab3") Tab #3
+            li.TabMenu-tabItem: a.TabMenu-tabLink(href="#tab4") Tab #4
 
-      p Built exclusively with indented syntax, the code is extremely readable and short. It uses Jade for HTML templating, Sass for CSS and CoffeeScript for behavior. <a href="/page/">Link to the page</a>
+          .TabMenu-tabContentList
+              
+            #tab1.TabMenu-tabContent.is-active
+              p Tab #1 content here
 
-      .Button.Button--m.Button--green: a(href="/nesto2/") Click Here
+            #tab2.TabMenu-tabContent
+              p Tab #2 content here
 
-    .Column--4.TextAlign--center
+            #tab3.TabMenu-tabContent
+              p Tab #3 content here
 
-      h2  Performant
+            #tab4.TabMenu-tabContent
+              p Tab #4 content here
 
-      p The final product is fast and performant. You end up with concatenated and minifed HTML, CSS and JavaScript files. Also, there is no bloat and all files are very small.
-
-      .Button.Button--m.Button--blue: a(href="/nesto/") Click Here
+        

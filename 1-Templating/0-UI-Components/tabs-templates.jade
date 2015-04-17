@@ -1,25 +1,25 @@
 
-//-------------------- tab-menu--a -------------------- //
+//-------------------- TabMenu -------------------- //
 
-.tab-menu--a
+.TabMenu
 
-  ul.tab-links--a
+  ul.TabMenu-tabList
     
-    li.tab-item--a.is-active: a(href="#tab1") Tab #1
-    li.tab-item--a: a(href="#tab2") Tab #2
-    li.tab-item--a: a(href="#tab3") Tab #3
-    li.tab-item--a: a(href="#tab4") Tab #4
+    li.TabMenu-tabItem.is-active: a.TabMenu-tabLink(href="#tab1") Tab #1
+    li.TabMenu-tabItem: a.TabMenu-tabLink(href="#tab2") Tab #2
+    li.TabMenu-tabItem: a.TabMenu-tabLink(href="#tab3") Tab #3
+    li.TabMenu-tabItem: a.TabMenu-tabLink(href="#tab4") Tab #4
 
-  .tab-content--a
+  .TabMenu-tabContentList
       
-    #tab1.tab.is-active
+    #tab1.TabMenu-tabContent.is-active
       p Tab #1 content here
 
-    #tab2.tab
+    #tab2.TabMenu-tabContent
       p Tab #2 content here
 
-    #tab3.tab
+    #tab3.TabMenu-tabContent
       p Tab #3 content here
 
-    #tab4.tab
+    #tab4.TabMenu-tabContent
       p Tab #4 content here

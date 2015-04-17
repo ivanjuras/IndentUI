@@ -59,8 +59,9 @@
 		// On click - tab menu
 		tabMenuOnClick: function() {
 
-			var $tabItem = $( '.TabItem' ),
-					$tabItemLink = $('.TabItem-link'),
+			var $tabItem = $( '.TabMenu-tabItem' ),
+					$tabItemLink = $( '.TabMenu-tabLink' ),
+					tabContent = '.TabMenu-tabContent',
 					fadeInSpeed = 400,
 					isActiveClass = 'is-active';
 
@@ -68,7 +69,7 @@
 				e.preventDefault();
 				var parentTabItem = $(this).parent( $tabItem ),
 						currentAttr = $(this).attr('href');
-				$( '.tab' + currentAttr ).fadeIn( fadeInSpeed ).siblings().hide();
+				$( tabContent + currentAttr ).fadeIn( fadeInSpeed ).siblings().hide();
 				parentTabItem.addClass( isActiveClass ).siblings().removeClass( isActiveClass );
 			});
 
@@ -90,14 +91,19 @@
 		}
 
 	};
+	
 
-	// Allow indentUI object to be global
-	global.indentUI = indentUI;
+	// -------------------- Call functions -------------------- // 
+	indentUI.smoothScrolling();
+	indentUI.scrollTop();
+	indentUI.hamburgerButtonClick();
+	indentUI.showHideNavMenu();
+	indentUI.tabMenuOnClick();
+
+
+	// -------------------- Make IndentUI global -------------------- // 
+	// global.indentUI = indentUI;
 
 }( window, jQuery ));
 
-indentUI.smoothScrolling();
-indentUI.scrollTop();
-indentUI.hamburgerButtonClick();
-indentUI.showHideNavMenu();
-indentUI.tabMenuOnClick();
+

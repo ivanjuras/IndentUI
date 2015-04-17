@@ -5,12 +5,13 @@
   border: 0
   border-radius: rem(4px)
   display: inline-block
-  font-weight: 300
   transition-duration: 0.4s
   a 
     display: block
     text-decoration: none
     color: $white
+    font-weight: 300
+    font-family: $font-family--b
     &:hover
       color: $white
       text-decoration: none
@@ -46,10 +47,10 @@
 .Button--m
   font-size: $font-size--base
   a
-    padding: rem(10px) rem(25px) rem(10px) rem(25px)
-  +media-queries(medium)
+    padding: rem( 10px ) rem( 25px ) rem( 10px ) rem( 25px )
+  +media-queries( medium )
     font-size: $font-size--base--bpm
-  +media-queries(small)
+  +media-queries( small )
     font-size: $font-size--base--bps
 
 

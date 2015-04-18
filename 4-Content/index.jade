@@ -7,7 +7,7 @@ append config
 
 block main-content
   
-  #features.ContainerL.ContainerL--standard
+  #features.ContainerL.ContainerL--lineB
 
     .Row--a
 
@@ -17,7 +17,7 @@ block main-content
 
         p <a href="#">IndentUI</a> is a fully customizable Front-End framework. You can build whatever UI you like, and still save an enormous amount of time. <a href="/posts/post/">Link to the first post</a>..
 
-        .Button.Button--m.Button--orange: a(href="/nesto/") Link 1
+        .Button.Button--M.Button--orange: a(href="/nesto/") Link 1
 
       .Column--4.u-centerText.u-pbXLMedia
 
@@ -25,7 +25,7 @@ block main-content
 
         p Built exclusively with indented syntax, the code is extremely readable and short. It uses Jade for HTML templating, Sass for CSS and Javascript for logic.
 
-        .Button.Button--m.Button--green: a(href="/nesto2/") Link 2
+        .Button.Button--M.Button--green: a(href="/nesto2/") Link 2
 
       .Column--4.u-centerText
 
@@ -33,7 +33,36 @@ block main-content
 
         p The final product is fast and performant. You end up with concatenated and minifed HTML, CSS and JavaScript files. There is no bloat, all files are small.
 
-        .Button.Button--m.Button--blue: a(href="/nesto/") Link 3
+        .Button.Button--M.Button--blue: a(href="/nesto/") Link 3
+
+  .ContainerL
+
+    .Row--a
+
+      .Column--12
+
+        .TabMenu
+
+          ul.TabMenu-tabList
+            
+            li.TabMenu-tabItem.is-active: a.TabMenu-tabLink(href="#tab1") Tab #1
+            li.TabMenu-tabItem: a.TabMenu-tabLink(href="#tab2") Tab #2
+            li.TabMenu-tabItem: a.TabMenu-tabLink(href="#tab3") Tab #3
+            li.TabMenu-tabItem: a.TabMenu-tabLink(href="#tab4") Tab #4
+
+          .TabMenu-tabContentList
+              
+            #tab1.TabMenu-tabContent.is-active
+              p Tab #1 content here
+
+            #tab2.TabMenu-tabContent
+              p Tab #2 content here
+
+            #tab3.TabMenu-tabContent
+              p Tab #3 content here
+
+            #tab4.TabMenu-tabContent
+              p Tab #4 content here
 
 
 

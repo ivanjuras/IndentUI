@@ -1,10 +1,15 @@
 section.ContainerL
 
-  .Row--c
+  .Row--a
     
-    .Column--12.Post
+    article.Column--8.Post
       
-      h1.Post-title #{postTitle}
+      h1.Post-title #{pageTitle}
       h4.Post-date Last update: <time datetime="#{postDateMeta}">#{postDate}</time>
 
       block main-content
+
+    .Column--4.ContainerL.ContainerL--lineTRBL
+
+      p This is a sidebar
+

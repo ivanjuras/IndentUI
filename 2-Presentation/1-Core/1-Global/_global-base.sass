@@ -45,13 +45,14 @@ h1
   
 h2
   font-size: $font-size--l
-  font-weight: 300
-  &.Subtitle
-    
+  font-weight: 400
+  margin-bottom: $margin-bottom--xxs
   +mediaQueries( medium )
     font-size: $font-size--l--bpm
+    margin-bottom: $margin-bottom--xxs--bpm
   +mediaQueries( small )
     font-size: $font-size--l--bps
+    margin-bottom: $margin-bottom--xxs--bps
 
 h3
   font-size: $font-size--l
@@ -103,7 +104,7 @@ p
   color: $black--light
   font-size: $font-size--base
   line-height: $line-height--a
-  margin-bottom: $margin-bottom--s
+  margin: 0 0 $margin-bottom--s 0
   +mediaQueries(medium)
     font-size: $font-size--base--bpm
     margin-bottom: $margin-bottom--s--bpm

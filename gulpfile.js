@@ -21,6 +21,7 @@ var gulp = require('gulp'),
 // -------------------- Output paths -------------------- //
 var publicDir = '6-Production/',
     publicDirDeploy = [ '6-Production/**', '6-Production/.htaccess'],
+    metaDataFile = 'pages.js',
 
     staticFilesInput = [
       '5-Static/.htaccess',
@@ -35,7 +36,7 @@ var publicDir = '6-Production/',
       '!1-Templating/0-UI-Components/**',
       '!1-Templating/3-Templates/template-rss-feed.jade'
     ],
-    jadeXMLInput = '1-Templating/3-Templates/template-rss-feed.jade'
+    jadeXMLInput = '1-Templating/3-Templates/template-rss-feed.jade',
     jadeOutput = '6-Production/',
 
     sassInput = '2-Presentation/**/*.sass',
@@ -132,6 +133,7 @@ gulp.task('xmlFiles', function() {
 
   gulp.src( jadeXMLInput )
     .pipe(jade({
+      locals: require('./pages'),
       pretty: true
     }))
     .pipe( rename( 'feed.xml' ) )
@@ -194,7 +196,7 @@ gulp.task('watch', function() {
   });
 
   gulp.watch( [jadeInput, jadeTemplatesInput], ['pages'] );
-  gulp.watch( jadeXMLInput, ['xmlFiles'] );
+  gulp.watch( [jadeXMLInput, metaDataFile], ['xmlFiles'] );
   gulp.watch( staticFilesInput, ['static'] );
   gulp.watch( sassInput, ['styles'] );
   gulp.watch( jsInput, ['scripts'] );
@@ -212,4 +214,4 @@ function handleErrors( error ) {
 
 
 // -------------------- Run all tasks -------------------- //
-gulp.task( 'default', [ 'pages', 'styles', 'scripts', 'xmlFiles', 'static', 'pages', 'deleteProd' ] );
+gulp.task( 'default', [ 'pages', 'styles', 'scripts', 'xmlFiles', 'static', 'pages' ] );

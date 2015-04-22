@@ -9,10 +9,9 @@ rss(version="2.0", xmlns:atom="http://www.w3.org/2005/Atom")
       description An RSS Feed Description
       pubDate Sun, 1 Feb 2015 21:17:00 GMT
 
-      for item in metadata
+      each page in pages
         item
-          title= item.title
-          link= siteUrl + item.url
-          description= item.description
-          pubDate= item.date
-     
+          title= page.title
+          link= siteUrl + page.url
+          description= page.description
+          pubDate= page.date

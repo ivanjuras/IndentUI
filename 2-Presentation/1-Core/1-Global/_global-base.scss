@@ -1,0 +1,194 @@
+// -------------------- Root -------------------- //
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+
+  -ms-overflow-style: none;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+
+}
+
+body {
+
+  background: palette( white, base );
+  color: palette( black, light );
+  font-family: $font-family--a;
+  font-size: $font-size--base;
+
+  @include mediaQueries( medium ) {
+    font-size: $font-size--base--bpm;
+  }
+
+  @include mediaQueries( small ) {
+    font-size: $font-size--base--bps;
+  }
+
+}
+
+// -------------------- Headings -------------------- //
+
+h1,
+h2,
+h3,
+h4 {
+
+  color: palette( black, lightest );
+  font-family: $font-family--b;
+  line-height: $line-height--c;
+  margin: 0;
+
+}
+
+h1 {
+
+  font-size: $font-size--xxl;
+
+  &.Post-title {
+
+    font-weight: 400;
+    margin-bottom: $margin-bottom--xs;
+
+    @include mediaQueries( medium ) {
+      margin-bottom: $margin-bottom--xs--bpm;
+    }
+
+    @include mediaQueries( small ) {
+      margin-bottom: $margin-bottom--xs--bps;
+    }
+
+  }
+
+  @include mediaQueries( medium ) {
+    font-size: $font-size--xxl--bpm;
+  }
+
+  @include mediaQueries( small ) {
+    font-size: $font-size--xxl--bps;
+  }
+
+}
+
+h2 {
+
+  font-size: $font-size--l;
+  font-weight: 400;
+  margin-bottom: $margin-bottom--xxs;
+
+  @include mediaQueries( medium ) {
+    font-size: $font-size--l--bpm;
+    margin-bottom: $margin-bottom--xxs--bpm;
+  }
+
+  @include mediaQueries( small ) {
+    font-size: $font-size--l--bps;
+    margin-bottom: $margin-bottom--xxs--bps;
+  }
+
+}
+
+h3 {
+
+  font-size: $font-size--l;
+  font-weight: 300;
+  margin-bottom: 0;
+
+  @include mediaQueries( medium ) {
+    font-size: $font-size--l--bpm;
+  }
+
+  @include mediaQueries( small ) {
+    font-size: $font-size--l--bps;
+  }
+
+}
+
+h4 {
+
+  font-size: $font-size--xs;
+  font-family: $font-family--a;
+  margin-bottom: 0;
+
+  &.Post-date {
+
+    font-weight: 400;
+    margin-bottom: $margin-bottom--m;
+    color: palette( grey, base );
+
+    @include mediaQueries( medium ) {
+      margin-bottom: $margin-bottom--m--bpm;
+    }
+
+    @include mediaQueries( small ) {
+      margin-bottom: $margin-bottom--m--bps;
+    }
+
+  }
+
+  @include mediaQueries( medium ) {
+    font-size: $font-size--xs--bpm;
+  }
+
+  @include mediaQueries( small ) {
+    font-size: $font-size--xs--bps;
+  }
+
+}
+
+// -------------------- Links -------------------- //
+
+a {
+
+  color: palette( red, base );
+  text-decoration: underline;
+
+  &:hover {
+    color: palette( red, dark );
+  }
+
+}
+
+// -------------------- Images -------------------- //
+
+img {
+
+  max-width: 100%;
+  height: auto;
+
+}
+
+// -------------------- Paragraphs -------------------- //
+
+p {
+
+  color: palette( black, light );
+  font-size: $font-size--base;
+  line-height: $line-height--a;
+  margin: 0 0 $margin-bottom--s 0;
+
+  @include mediaQueries( medium ) {
+    font-size: $font-size--base--bpm;
+    margin-bottom: $margin-bottom--s--bpm;
+  }
+
+  @include mediaQueries( small ) {
+    font-size: $font-size--base--bps;
+    margin-bottom: $margin-bottom--s--bps;
+  }
+
+}
+
+// -------------------- Lists -------------------- //
+
+ul {
+
+  margin: 0;
+  padding: 0;
+  -webkit-padding-start: 0;
+  -ms-padding-start: 0;
+  -moz-padding-start: 0;
+
+}

@@ -9,11 +9,11 @@
   a 
     display: block
     text-decoration: none
-    color: $white
+    color: palette( white )
     font-weight: 300
     font-family: $font-family--b
     &:hover
-      color: $white
+      color: palette( white )
       text-decoration: none
   +mediaQueries( medium )
     display: block
@@ -27,7 +27,7 @@
     margin: 0 auto
 
 
-// ----- Size ----- //
+// --- Size --- //
 
 .Button--XL 
   font-size: $font-size--l
@@ -48,41 +48,41 @@
     font-size: $font-size--base--bps
 
 
-// ----- Colors ----- //
+// --- Colors --- //
 
 .Button--red
-  +buttonColor( $red, 3px, solid, $red--dark )
+  border: 3px solid palette( red, dark )
+  background-color: palette( red )
   &:hover,
   &:active,
   &:focus
-    background-color: $red--dark
+    background-color: palette( red, dark )
 
 .Button--blue
-  +buttonColor( $blue, 3px, solid, $blue--dark )
+  border: 3px solid palette( blue, dark )
+  background-color: palette( blue )
   &:hover,
   &:active,
   &:focus
-    background-color: $blue--dark
+    background-color: palette( blue, dark )
 
 .Button--green
-  +buttonColor( $green, 3px, solid, $green--dark )
   &:hover,
   &:active,
   &:focus
-    background-color: $green--dark
+    background-color: palette( green, dark )
 
 .Button--orange
-  +buttonColor( $orange, 3px, solid, $orange--dark )
   &:hover,
   &:active,
   &:focus
-    background-color: $orange--dark
+    background-color: palette( orange, dark )
 
 
 // -------------------- Button--hamburger -------------------- //
 
 .Button--hamburger
-  border: 1px solid $grey--light
+  border: 1px solid palette( grey, light )
   cursor: pointer
   display: none
   float: right
@@ -92,11 +92,11 @@
   &:hover,
   &:active,
   &:focus
-    background: $grey--light
+    background: palette( grey, light )
   .fa-bars
     padding-left: rem( 10px )
     font-size: $font-size--base
-    color: $grey--dark
+    color: palette( grey, dark )
     +mediaQueries( small )
       padding-left: rem( 5px )
   +mediaQueries( medium )
@@ -109,19 +109,19 @@
 
 .Button--toTop
   background: inherit
-  border: 1px solid $grey
+  border: 1px solid palette( grey )
   display: none
   position: fixed
   bottom: rem( 40px )
   right: rem( 40px )
   &:hover
-    background: $grey--dark
+    background: palette( grey, dark )
   .fa-chevron-up
     font-size: $font-size--s
     padding: rem( 10px ) rem( 15px )
-    color: $grey
+    color: palette( grey, base)
     &:hover
-      color: $white
+      color: palette( white )
   +mediaQueries( medium )
     bottom: rem( 20px )
     right: rem( 20px )

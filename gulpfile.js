@@ -15,36 +15,37 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     prettyURL = require('gulp-pretty-url'),
     order = require('gulp-order'),
-    del = require('del')
+    del = require('del'),
+    critical = require('critical').stream;
 
 
 // -------------------- Output paths -------------------- //
-var publicDir = '6-Production/',
-    publicDirDeploy = [ '6-Production/**', '6-Production/.htaccess'],
+var publicDir = '6-public/',
+    publicDirDeploy = [ '6-public/**', '6-public/.htaccess'],
     metaDataFile = 'pages.js',
 
     staticFilesInput = [
-      '5-Static/.htaccess',
-      '5-Static/robots.txt', 
-      '5-Static/**/*.{jpg,gif,svg,png}'
+      '5-static/.htaccess',
+      '5-static/robots.txt', 
+      '5-static/**/*.{jpg,gif,svg,png}'
     ],
-    staticFilesOutput = '6-Production',
+    staticFilesOutput = '6-public',
 
-    jadeInput = '4-Content/**/*.jade',
+    jadeInput = '4-content/**/*.jade',
     jadeTemplatesInput = [
-      '1-Templating/**/*.jade',
-      '!1-Templating/0-UI-Components/**',
-      '!1-Templating/3-Templates/template-rss-feed.jade'
+      '1-templating/**/*.jade',
+      '!1-templating/0-uicomponents/**',
+      '!1-templating/3-templates/template-rss-feed.jade'
     ],
-    jadeXMLInput = '1-Templating/3-Templates/template-rss-feed.jade',
-    jadeOutput = '6-Production/',
+    jadeXMLInput = '1-templating/3-templates/template-rss-feed.jade',
+    jadeOutput = '6-public/',
 
-    sassInput = '2-Presentation/**/*.sass',
-    sassOutput = '6-Production/assets/css/',
+    sassInput = '2-presentation/**/*.{scss,sass}',
+    sassOutput = '6-public/assets/css/',
 
-    jsInput = '3-Logic/**/*.js',
-    jsVendorInput = '3-Logic/1-Plugins/*.js',
-    jsOutput = '6-Production/assets/js/'
+    jsInput = '3-logic/**/*.js',
+    jsVendorInput = '3-logic/1-plugins/*.js',
+    jsOutput = '6-public/assets/js/'
 
 
 // -------------------- FTP settings -------------------- //
@@ -53,7 +54,7 @@ var ftpHostName = 'gala-holiday.com',
     ftpPassword = 'Dj$RV|V*yS',
     ftpRemoteDirectory = '/domains/ivanjuras.com/public_html/',
     ftpPort = 21,
-    ftpParallelStreams = 10
+    ftpParallelStreams = 8
 
 
 // -------------------- Other variables -------------------- //
@@ -126,6 +127,26 @@ gulp.task('scripts', function() {
 });
 
 
+// -------------------- Critical CSS rendering task -------------------- //
+gulp.task('critical', function () {
+
+  console.log( 'Starting CRITICAL CSS task' );
+
+  return gulp.src( publicDir + '**/*.html' )
+    .pipe( critical({
+      base: publicDir,
+      css: [publicDir + 'assets/css/style.css'],
+      width: 1024,
+      height: 768,
+      extract: true,
+      inline: true,
+      minify: true
+    }))
+    .pipe( gulp.dest( publicDir ) );
+
+});
+
+
 // -------------------- xmlFiles tasks -------------------- //
 gulp.task('xmlFiles', function() {
 
@@ -145,17 +166,17 @@ gulp.task('xmlFiles', function() {
 // -------------------- Static file transfer tasks -------------------- //
 gulp.task('static', function() {
 
-  console.log( 'Starting Static file transfer tasks.' );
+  console.log( 'Starting - static file transfer tasks.' );
 
   gulp.src( staticFilesInput )
     .pipe( gulp.dest( staticFilesOutput ) )
 
 });
 
-// -------------------- Delete the 6-Production folder -------------------- //
-gulp.task('deleteProd', function() {
+// -------------------- Delete the 6-public folder -------------------- //
+gulp.task('delprod', function() {
 
-  console.log( 'Starting - delete the 6-Production folder' );
+  console.log( 'Starting - delete the 6-public folder' );
 
   del([
     publicDir
@@ -214,4 +235,4 @@ function handleErrors( error ) {
 
 
 // -------------------- Run all tasks -------------------- //
-gulp.task( 'default', [ 'pages', 'styles', 'scripts', 'xmlFiles', 'static', 'pages' ] );
+gulp.task( 'default', [ 'pages', 'styles', 'scripts', 'xmlFiles', 'static' ] );

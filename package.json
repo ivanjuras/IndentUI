@@ -9,6 +9,7 @@
   "author": "Ivan Juras",
   "license": "ISC",
   "devDependencies": {
+    "critical": "file:..\\..\\AppData\\Local\\Temp\\npm-6372-67ef4938\\git-cache-6f7a74cd08ab\\056b7875e7e089c7a87069cb1d3b5c6323e3ccb6",
     "del": "*",
     "gulp": "*",
     "gulp-autoprefixer": "*",

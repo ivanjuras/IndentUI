@@ -20,41 +20,41 @@ var gulp = require('gulp'),
 
 
 // -------------------- Output paths -------------------- //
-var publicDir = '6-public/',
-    publicDirDeploy = [ '6-public/**', '6-public/.htaccess'],
+var publicDir = '6-Public/',
+    publicDirDeploy = [ '6-Public/**', '6-Public/.htaccess'],
     metaDataFile = 'pages.js',
 
     staticFilesInput = [
-      '5-static/.htaccess',
-      '5-static/robots.txt', 
-      '5-static/**/*.{jpg,gif,svg,png}'
+      '5-Static/.htaccess',
+      '5-Static/robots.txt', 
+      '5-Static/**/*.{jpg,gif,svg,png}'
     ],
-    staticFilesOutput = '6-public',
+    staticFilesOutput = '6-Public',
 
-    jadeInput = '4-content/**/*.jade',
+    jadeInput = '4-Content/**/*.jade',
     jadeTemplatesInput = [
-      '1-templating/**/*.jade',
-      '!1-templating/0-uicomponents/**',
-      '!1-templating/3-templates/template-rss-feed.jade'
+      '1-Templating/**/*.jade',
+      '!1-Templating/0-uicomponents/**',
+      '!1-Templating/3-Templates/template-rss-feed.jade'
     ],
-    jadeXMLInput = '1-templating/3-templates/template-rss-feed.jade',
-    jadeOutput = '6-public/',
+    jadeXMLInput = '1-Templating/3-Templates/template-rss-feed.jade',
+    jadeOutput = '6-Public/',
 
-    sassInput = '2-presentation/**/*.{scss,sass}',
-    sassOutput = '6-public/assets/css/',
+    sassInput = '2-Presentation/**/*.{scss,sass}',
+    sassOutput = '6-Public/assets/css/',
 
-    jsInput = '3-logic/**/*.js',
-    jsVendorInput = '3-logic/1-plugins/*.js',
-    jsOutput = '6-public/assets/js/'
+    jsInput = '3-Logic/**/*.js',
+    jsVendorInput = '3-Logic/1-Plugins/*.js',
+    jsOutput = '6-Public/assets/js/'
 
 
 // -------------------- FTP settings -------------------- //
-var ftpHostName = 'gala-holiday.com',
-    ftpUserName = 'galaho',
-    ftpPassword = 'Dj$RV|V*yS',
-    ftpRemoteDirectory = '/domains/ivanjuras.com/public_html/',
+var ftpHostName = '217.199.187.250',
+    ftpUserName = 'ivanjuras.com',
+    ftpPassword = 'NN22mm34!!??',
+    ftpRemoteDirectory = '/public_html/',
     ftpPort = 21,
-    ftpParallelStreams = 8
+    ftpParallelStreams = 3
 
 
 // -------------------- Other variables -------------------- //
@@ -173,10 +173,10 @@ gulp.task('static', function() {
 
 });
 
-// -------------------- Delete the 6-public folder -------------------- //
+// -------------------- Delete the 6-Public folder -------------------- //
 gulp.task('delprod', function() {
 
-  console.log( 'Starting - delete the 6-public folder' );
+  console.log( 'Starting - delete the 6-Public folder' );
 
   del([
     publicDir
@@ -193,7 +193,7 @@ gulp.task('deploy', function() {
     host: ftpHostName,
     user: ftpUserName,
     password: ftpPassword,
-    port: ftpPort,
+    // port: ftpPort,
     parallel: ftpParallelStreams,
     log: gutil.log
 

@@ -1,7 +1,10 @@
-// -------------------- Root -------------------- //
+
+// ---------- Root ---------- //
 
 * {
+  
   box-sizing: border-box;
+
 }
 
 html {
@@ -10,27 +13,27 @@ html {
   -ms-touch-action: manipulation;
   touch-action: manipulation;
   overflow-style: none;
-
+  
 }
 
 body {
 
   background: palette( white, base );
   color: palette( black, light );
-  font-family: $font-family--a;
-  font-size: $font-size--base;
+  font-family: $fontFamily--a;
+  font-size: $fontSize--base;
 
   @include mediaQueries( medium ) {
-    font-size: $font-size--base--bpm;
+    font-size: $fontSize--base--bpm;
   }
 
   @include mediaQueries( small ) {
-    font-size: $font-size--base--bps;
+    font-size: $fontSize--base--bps;
   }
 
 }
 
-// -------------------- Headings -------------------- //
+// ---------- Headings ---------- //
 
 h1,
 h2,
@@ -38,108 +41,108 @@ h3,
 h4 {
 
   color: palette( black, lightest );
-  font-family: $font-family--b;
-  line-height: $line-height--c;
+  font-family: $fontFamily--b;
+  line-height: $lineHeight--c;
   margin: 0;
 
 }
 
 h1 {
 
-  font-size: $font-size--xxl;
+  font-size: $fontSize--xxl;
 
   &.Post-title {
 
     font-weight: 400;
-    margin-bottom: $margin-bottom--xs;
+    margin-bottom: $marginBottom--xs;
 
     @include mediaQueries( medium ) {
-      margin-bottom: $margin-bottom--xs--bpm;
+      margin-bottom: $marginBottom--xs--bpm;
     }
 
     @include mediaQueries( small ) {
-      margin-bottom: $margin-bottom--xs--bps;
+      margin-bottom: $marginBottom--xs--bps;
     }
 
   }
 
   @include mediaQueries( medium ) {
-    font-size: $font-size--xxl--bpm;
+    font-size: $fontSize--xxl--bpm;
   }
 
   @include mediaQueries( small ) {
-    font-size: $font-size--xxl--bps;
+    font-size: $fontSize--xxl--bps;
   }
 
 }
 
 h2 {
 
-  font-size: $font-size--l;
+  font-size: $fontSize--l;
   font-weight: 400;
-  margin-bottom: $margin-bottom--xxs;
+  margin-bottom: $marginBottom--xxs;
 
   @include mediaQueries( medium ) {
-    font-size: $font-size--l--bpm;
-    margin-bottom: $margin-bottom--xxs--bpm;
+    font-size: $fontSize--l--bpm;
+    margin-bottom: $marginBottom--xxs--bpm;
   }
 
   @include mediaQueries( small ) {
-    font-size: $font-size--l--bps;
-    margin-bottom: $margin-bottom--xxs--bps;
+    font-size: $fontSize--l--bps;
+    margin-bottom: $marginBottom--xxs--bps;
   }
 
 }
 
 h3 {
 
-  font-size: $font-size--l;
+  font-size: $fontSize--l;
   font-weight: 300;
   margin-bottom: 0;
 
   @include mediaQueries( medium ) {
-    font-size: $font-size--l--bpm;
+    font-size: $fontSize--l--bpm;
   }
 
   @include mediaQueries( small ) {
-    font-size: $font-size--l--bps;
+    font-size: $fontSize--l--bps;
   }
 
 }
 
 h4 {
 
-  font-size: $font-size--xs;
-  font-family: $font-family--a;
+  font-size: $fontSize--xs;
+  font-family: $fontFamily--a;
   margin-bottom: 0;
 
   &.Post-date {
 
     font-weight: 400;
-    margin-bottom: $margin-bottom--m;
+    margin-bottom: $marginBottom--m;
     color: palette( grey, base );
 
     @include mediaQueries( medium ) {
-      margin-bottom: $margin-bottom--m--bpm;
+      margin-bottom: $marginBottom--m--bpm;
     }
 
     @include mediaQueries( small ) {
-      margin-bottom: $margin-bottom--m--bps;
+      margin-bottom: $marginBottom--m--bps;
     }
 
   }
 
   @include mediaQueries( medium ) {
-    font-size: $font-size--xs--bpm;
+    font-size: $fontSize--xs--bpm;
   }
 
   @include mediaQueries( small ) {
-    font-size: $font-size--xs--bps;
+    font-size: $fontSize--xs--bps;
   }
 
 }
 
-// -------------------- Links -------------------- //
+// ---------- Links ---------- //
 
 a {
 
@@ -152,7 +155,7 @@ a {
 
 }
 
-// -------------------- Images -------------------- //
+// ---------- Images ---------- //
 
 img {
 
@@ -161,28 +164,28 @@ img {
 
 }
 
-// -------------------- Paragraphs -------------------- //
+// ---------- Paragraphs ---------- //
 
 p {
 
   color: palette( black, light );
-  font-size: $font-size--base;
-  line-height: $line-height--a;
-  margin: 0 0 $margin-bottom--s 0;
+  font-size: $fontSize--base;
+  line-height: $lineHeight--a;
+  margin: 0 0 $marginBottom--s 0;
 
   @include mediaQueries( medium ) {
-    font-size: $font-size--base--bpm;
-    margin-bottom: $margin-bottom--s--bpm;
+    font-size: $fontSize--base--bpm;
+    margin-bottom: $marginBottom--s--bpm;
   }
 
   @include mediaQueries( small ) {
-    font-size: $font-size--base--bps;
-    margin-bottom: $margin-bottom--s--bps;
+    font-size: $fontSize--base--bps;
+    margin-bottom: $marginBottom--s--bps;
   }
 
 }
 
-// -------------------- Lists -------------------- //
+// ---------- Lists ---------- //
 
 ul {
 

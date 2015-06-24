@@ -1,0 +1,32 @@
+
+// ---------- Post ---------- //
+
+// Base
+.Post {
+
+  padding: $paddingTop--xs $paddingRight--s $paddingBottom--l $paddingLeft--s;
+
+  @include mediaQueries( medium ) {
+    padding: 0;
+  }
+
+  @include mediaQueries( small ) {
+    padding: 0;
+  }
+
+}
+
+// Bordered
+.Post--borderTRBL {
+
+  border: 1px solid palette( gray, light );
+
+  @include mediaQueries( medium ) {
+    border: 0;
+  }
+
+  @include mediaQueries( small ) {
+    border: 0;
+  }
+
+}

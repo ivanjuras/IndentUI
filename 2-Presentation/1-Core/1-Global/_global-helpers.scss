@@ -1,36 +1,37 @@
-// -------------------- Functions -------------------- //
 
-// --- Convert to rem --- //
+// ---------- Functions ---------- //
 
-@function rem($target, $context: 16px) {
+// Convert to rem
+@function rem( $target, $context: 16px ) {
 
-  @return $target / $context * 1rem;
+  @return ( $target / $context ) * 1rem;
 
 }
 
-// --- Get color from a palette --- //
-
+// Get color from a palette
 @function palette( $palette, $shade: base ) {
 
-  @return map-get( map-get( $palettes, $palette ), $shade );
+  @return map-get(
+    map-get( $palettes, $palette ),
+    $shade
+  );
 
 }
 
 
-// -------------------- Mixins -------------------- //
+// ---------- Mixins ---------- //
 
-// --- Media queries --- //
+// Media queries
+@mixin mediaQueries( $break ) {
 
-@mixin mediaQueries($break) {
-
-  @if $break == "small" {
-    @media (max-width: $breakpoint--s) {
+  @if ($break == 'small') {
+    @media ( max-width: $breakpoint--s ) {
       @content;
     }
   }
 
-  @else if $break == "medium" {
-    @media (min-width: $breakpoint--s) and (max-width: $breakpoint--m) {
+  @else if ( $break == 'medium' ) {
+    @media ( max-width: $breakpoint--m ) {
       @content;
     }
   }

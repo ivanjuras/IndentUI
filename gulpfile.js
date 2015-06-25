@@ -40,7 +40,7 @@ var publicDir = '6-Public/',
     jadeXMLInput = '1-Templating/3-Templates/template-rss-feed.jade',
     jadeOutput = '6-Public/',
 
-    sassInput = '2-Presentation/**/*.{scss,sass}',
+    sassInput = '2-Presentation/**/*.scss',
     sassOutput = '6-Public/assets/css/',
 
     jsInput = '3-Logic/**/*.js',
@@ -88,7 +88,7 @@ gulp.task('styles', function() {
 
   gulp.src( sassInput )
     .pipe( sass({
-      indentedSyntax: sassIndentedSyntax
+      errorLogToConsole: true
     })).on( 'error', handleErrors )
     .pipe( autoprefixer ({
       browsers:[sassAutoPrefixerVersion]

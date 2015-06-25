@@ -2,11 +2,11 @@
 // ---------- Core styles ---------- //
 
 // Global
-@import '1-Global/global-helpers';
-@import '1-Global/global-config';
-@import '1-Global/global-normalize';
-@import '1-Global/global-base';
+@import 'Global/global-helpers';
+@import 'Global/global-config';
+@import 'Global/global-normalize';
+@import 'Global/global-base';
 
 // Plugins
-@import '2-Plugins/bourbon/bourbon';
-@import '2-Plugins/font-awesome/font-awesome';
+@import 'Plugins/bourbon/bourbon';
+@import 'Plugins/font-awesome/font-awesome';

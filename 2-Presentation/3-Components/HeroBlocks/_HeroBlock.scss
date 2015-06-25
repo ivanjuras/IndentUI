@@ -1,0 +1,51 @@
+
+// ---------- Hero block ---------- //
+
+// Base
+.HeroBlock {
+
+  height: 100%;
+  text-align: center;
+
+}
+
+// Headline
+.HeroBlock-heroHeadline {
+
+  color: palette( grey, dark );
+  font-size: $fontSize--xxl;
+  font-weight: 300;
+  line-height: $lineHeight--c;
+  margin-bottom: $marginBottom--s;
+
+  @include mediaQueries( medium ) {
+    font-size: $fontSize--xxl--bpm;
+    margin-bottom: $marginBottom--s--bpm;
+  }
+
+  @include mediaQueries( small ) {
+    font-size: $fontSize--xxl--bps;
+    margin-bottom: $marginBottom--s--bps;
+  }
+
+}
+
+// Tagline
+.HeroBlock-heroTagline {
+
+  color: palette( grey, dark );
+  font-size: $fontSize--xl;
+  font-weight: 300;
+  margin-bottom: $marginBottom--s;
+
+  @include mediaQueries( medium ) {
+    font-size: $fontSize--xl--bpm;
+    margin-bottom: $marginBottom--s--bpm;
+  }
+
+  @include mediaQueries( small ) {
+    font-size: $fontSize--xl--bps;
+    margin-bottom: $marginBottom--s--bps;
+  }
+
+}

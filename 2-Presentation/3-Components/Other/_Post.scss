@@ -14,19 +14,39 @@
     padding: 0;
   }
 
-}
+  // Main title
+  h1 {
 
-// Bordered
-.Post--borderTRBL {
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    margin-bottom: $marginBottom--xs;
 
-  border: 1px solid palette( gray, light );
+    @include mediaQueries( medium ) {
+      margin-bottom: rem( 5px )
+    }
 
-  @include mediaQueries( medium ) {
-    border: 0;
+    @include mediaQueries( small ) {
+      margin-bottom: rem( 5px )
+    }
+
   }
 
-  @include mediaQueries( small ) {
-    border: 0;
+  // Subtitles
+  h2 {
+
+    font-weight: 700;
+    letter-spacing: -0.03em;
+
+    @include mediaQueries( medium ) {
+      font-size: $fontSize--l--bpm;
+      margin-bottom: $marginBottom--xxs--bpm;
+    }
+
+    @include mediaQueries( small ) {
+      font-size: $fontSize--l--bps;
+      margin-bottom: $marginBottom--xxs--bps;
+    }
+
   }
 
 }

@@ -10,8 +10,8 @@
 // Header
 .Container--header {
 
-  background: palette( gray, x-light );
-  border-bottom: 1px solid palette( gray, light );
+  background: palette( gray, xx-light );
+  border-bottom: 1px solid palette( gray, x-light );
   padding: 0;
 
 }
@@ -40,7 +40,7 @@
 .ContainerXL--borderB {
 
   background: inherit;
-  border-bottom: 1px solid palette( gray, light );
+  border-bottom: 1px solid palette( gray, x-light );
 
 }
 
@@ -63,7 +63,7 @@
 .ContainerL--borderB {
 
   background: inherit;
-  border-bottom: 1px solid palette( gray, light );
+  border-bottom: 1px solid palette( gray, x-light );
 
 }
 
@@ -77,7 +77,7 @@
 // Footer
 .Container--footer {
 
-  background: palette( gray, light ) est;
-  border-top: 1px solid palette( gray, light );
+  background: palette( gray, xx-light );
+  border-top: 1px solid palette( gray, x-light );
   
 }

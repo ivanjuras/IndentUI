@@ -40,7 +40,7 @@ var publicDir = '6-Public/',
     jadeXMLInput = '1-Templating/3-Templates/template-rss-feed.jade',
     jadeOutput = '6-Public/',
 
-    sassInput = '2-Presentation/**/*.scss',
+    sassInput = '2-Presentation/**/*.{scss,sass}',
     sassOutput = '6-Public/assets/css/',
 
     jsInput = '3-Logic/**/*.js',
@@ -49,19 +49,18 @@ var publicDir = '6-Public/',
 
 
 // -------------------- FTP settings -------------------- //
-var ftpHostName = '217.199.187.250',
+var ftpHostName = 'ftp.ivanjuras.com',
     ftpUserName = 'ivanjuras.com',
     ftpPassword = 'NN22mm34!!??',
     ftpRemoteDirectory = '/public_html/',
     ftpPort = 21,
-    ftpParallelStreams = 3
+    ftpParallelStreams = 2
 
 
 // -------------------- Other variables -------------------- //
 var jsSourceMap = false,
     serverPort = 4000,
     prettyJade = false,
-    sassIndentedSyntax = true,
     sassAutoPrefixerVersion = 'last 2 versions'
 
 
@@ -132,7 +131,7 @@ gulp.task('critical', function () {
 
   console.log( 'Starting CRITICAL CSS task' );
 
-  return gulp.src( publicDir + '**/*.html' )
+  gulp.src( publicDir + '**/*.html' )
     .pipe( critical({
       base: publicDir,
       css: [publicDir + 'assets/css/style.css'],

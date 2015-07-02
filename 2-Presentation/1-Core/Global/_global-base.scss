@@ -51,21 +51,6 @@ h1 {
 
   font-size: $fontSize--xxl;
 
-  &.Post-title {
-
-    font-weight: 400;
-    margin-bottom: $marginBottom--xs;
-
-    @include mediaQueries( medium ) {
-      margin-bottom: $marginBottom--xs--bpm;
-    }
-
-    @include mediaQueries( small ) {
-      margin-bottom: $marginBottom--xs--bps;
-    }
-
-  }
-
   @include mediaQueries( medium ) {
     font-size: $fontSize--xxl--bpm;
   }

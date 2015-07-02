@@ -3,7 +3,7 @@
 .gs-title {
 
   b {
-    font-size: rem(18px) !important;
+    font-size: rem( 18px ) !important;
   }
 
 }
@@ -12,8 +12,8 @@
 
 .gs-snippet {
 
-  font-family: $font-family--a !important;
-  font-size: rem(18px) !important;
+  font-family: $fontFamily--a !important;
+  font-size: rem( 18px ) !important;
 
 }
 
@@ -27,7 +27,7 @@
 
 .gsc-selected-option-container {
 
-  padding-right: rem(30px) !important;
+  padding-right: rem( 30px ) !important;
 
 }
 
@@ -36,7 +36,7 @@
 .gs-no-results-result .gs-snippet,
 .gs-error-result .gs-snippet {
 
-  background: $white !important;
+  background: palette( white ) !important;
   border-width: 0 !important;
 
 }

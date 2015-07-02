@@ -128,14 +128,14 @@
 // ---------- Bottom only ---------- //
 
 // Medium screen, extra large
-.u-bpm-pbXL {
+// .u-bpm-pbXL {
 
-  @include mediaQueries( medium ) {
-    padding-bottom: $paddingBottom--xl--bpm;
-  }
+//   @include mediaQueries( medium ) {
+//     padding-bottom: $paddingBottom--xl--bpm;
+//   }
 
-  @include mediaQueries( small ) {
-    padding-bottom: $paddingBottom--xl--bps;
-  }
+//   @include mediaQueries( small ) {
+//     padding-bottom: $paddingBottom--xl--bps;
+//   }
 
-}
+// }

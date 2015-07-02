@@ -39,13 +39,13 @@
 
   @include mediaQueries( medium ) {
 
-    border-bottom: 1px solid palette( grey, light );
+    border-bottom: 1px solid palette( grey, x-light );
     display: block;
     text-align: center;
     padding: rem( 12px ) 0;
 
     &:first-child {
-      border-top: 1px solid palette( grey, light );
+      border-top: 1px solid palette( grey, x-light );
     }
 
     &:last-of-type {

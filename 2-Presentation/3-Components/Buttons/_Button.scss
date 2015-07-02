@@ -3,6 +3,7 @@
 
 // Base
 .Button {
+  
   border: 0;
   border-radius: rem( 4px );
   display: inline-block;
@@ -13,8 +14,8 @@
     display: block;
     text-decoration: none;
     color: palette( white );
-    font-weight: 300;
-    font-family: $fontFamily--b;
+    font-weight: 400;
+    font-family: $fontFamily--a;
 
     &:hover {
       color: palette( white );
@@ -52,11 +53,11 @@
   }
 
   @include mediaQueries( medium ) {
-    font-size: $fontSize--l--bpm;
+    font-size: $fontSize--base--bpm;
   }
 
   @include mediaQueries( small ) {
-    font-size: $fontSize--l--bps;
+    font-size: $fontSize--base--bps;
   }
 
 }

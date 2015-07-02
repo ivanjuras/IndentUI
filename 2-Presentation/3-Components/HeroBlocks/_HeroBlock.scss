@@ -16,6 +16,7 @@
   font-size: $fontSize--xxl;
   font-weight: 300;
   line-height: $lineHeight--c;
+  letter-spacing: -0.04em;
   margin-bottom: $marginBottom--s;
 
   @include mediaQueries( medium ) {

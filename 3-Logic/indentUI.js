@@ -16,7 +16,7 @@
                     scrollSpeed
                 );
             });
-        }, // Smooth scrolling on click
+        }, // Smooth scrolling on click event
 
         scrollTop: function() {
             var $btnToTop = $( '.ToTopButton' ),

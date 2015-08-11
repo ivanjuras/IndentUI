@@ -2,6 +2,7 @@
 
 ;( function( global, $ ) {
 
+<<<<<<< HEAD
 	// ---------- Global variables ---------- //
 
 		var $global = $( global ),

@@ -1,0 +1,32 @@
+{
+  "name": "indentUI-Build",
+  "version": "1.0.0",
+  "description": "Indent UI front-end framework system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivan Juras",
+  "license": "ISC",
+  "devDependencies": {
+    "critical": "git+https://github.com/addyosmani/critical.git",
+    "del": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-connect": "*",
+    "gulp-html-minifier": "*",
+    "gulp-jade": "*",
+    "gulp-jshint": "*",
+    "gulp-minify-css": "*",
+    "gulp-order": "*",
+    "gulp-pretty-url": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "gulp-uglify": "*",
+    "gulp-uglifyjs": "*",
+    "gulp-util": "*",
+    "gulp-watch": "*",
+    "jshint-stylish": "*",
+    "vinyl-ftp": "*"
+  }
+}

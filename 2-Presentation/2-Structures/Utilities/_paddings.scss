@@ -1,0 +1,141 @@
+
+// ---------- All sides ---------- //
+
+// // Extra large
+// .u-ptrblXL {
+
+//   padding: $paddingTop--xl $paddingRight--s $paddingBottom--xl $paddingLeft--s;
+
+//   @include mediaQueries( medium ) {
+//     padding: $paddingTop--xl--bpm $paddingRight--s--bpm $paddingBottom--xl--bpm $paddingLeft--s--bpm;
+//   }
+
+//   @include mediaQueries( small ) {
+//     padding: $paddingTop--xl--bps $paddingRight--s--bps $paddingBottom--xl--bps $paddingLeft--s--bps;
+//   }
+
+// }
+
+// // Large
+// .u-ptrblL {
+
+//   padding: $paddingTop--l $paddingRight--s $paddingBottom--l $paddingLeft--s;
+
+//   @include mediaQueries( medium ) {
+//     padding: $paddingTop--l--bpm $paddingRight--s--bpm $paddingBottom--l--bpm $paddingLeft--s--bpm;
+//   }
+
+//   @include mediaQueries( small ) {
+//     padding: $paddingTop--l--bps $paddingRight--s--bps $paddingBottom--l--bps $paddingLeft--s--bps;
+//   }
+
+// }
+
+// // Medium
+// .u-ptrblM {
+
+//   padding: $paddingTop--m $paddingRight--s $paddingBottom--m $paddingLeft--s;
+
+//   @include mediaQueries( medium ) {
+//     padding: $paddingTop--m--bpm $paddingRight--s--bpm $paddingBottom--m--bpm $paddingLeft--s--bpm;
+//   }
+
+//   @include mediaQueries( small ) {
+//     padding: $paddingTop--m--bps $paddingRight--s--bps $paddingBottom--m--bps $paddingLeft--s--bps;
+//   }
+
+// }
+
+// // Small
+// .u-ptrblS {
+
+//   padding: $paddingTop--s $paddingRight--s $paddingBottom--s $paddingLeft--s;
+
+//   @include mediaQueries( medium ) {
+//     padding: $paddingTop--s--bpm $paddingRight--s--bpm $paddingBottom--s--bpm $paddingLeft--s--bpm;
+//   }
+
+//   @include mediaQueries( small ) {
+//     padding: $paddingTop--s--bps $paddingRight--s--bps $paddingBottom--s--bps $paddingLeft--s--bps;
+//   }
+
+// }
+
+// // Extra small
+// .u-ptrblXS {
+
+//   padding: 0 $paddingRight--s 0 $paddingLeft--s;
+
+//   @include mediaQueries( medium ) {
+//     padding: 0 $paddingRight--s--bpm 0 $paddingLeft--s--bpm;
+//   }
+
+//   @include mediaQueries( small ) {
+//     padding: 0 $paddingRight--s--bps 0 $paddingLeft--s--bps;
+//   }
+
+// }
+
+
+// // ---------- Top bottom only ---------- //
+
+// // Extra large
+// .u-ptbXL {
+
+//   padding: $paddingTop--xl 0 $paddingBottom--xl 0;
+
+//   @include mediaQueries( medium ) {
+//     padding: $paddingTop--xl--bpm 0 $paddingBottom--xl--bpm 0;
+//   }
+
+//   @include mediaQueries( small ) {
+//     padding: $paddingTop--xl--bps 0 $paddingBottom--xl--bps 0;
+//   }
+
+// }
+
+// // Medium
+// .u-ptbM {
+
+//   padding: $paddingTop--m 0 $paddingBottom--m 0;
+
+//   @include mediaQueries( medium ) {
+//     padding: $paddingTop--m--bpm 0 $paddingBottom--m--bpm 0;
+//   }
+
+//   @include mediaQueries( small ) {
+//     padding: $paddingTop--m--bps 0 $paddingBottom--m--bps 0;
+//   }
+
+// }
+
+// // Small
+// .u-ptbS {
+
+//   padding: $paddingTop--s 0 $paddingBottom--s 0;
+
+//   @include mediaQueries( medium ) {
+//     padding: $paddingTop--s--bpm 0 $paddingBottom--s--bpm 0;
+//   }
+
+//   @include mediaQueries( small ) {
+//     padding: $paddingTop--s--bps 0 $paddingBottom--s--bps 0;
+//   }
+
+// }
+
+
+// ---------- Bottom only ---------- //
+
+// Medium screen, extra large
+// .u-bpm-pbXL {
+
+//   @include mediaQueries( medium ) {
+//     padding-bottom: $paddingBottom--xl--bpm;
+//   }
+
+//   @include mediaQueries( small ) {
+//     padding-bottom: $paddingBottom--xl--bps;
+//   }
+
+// }

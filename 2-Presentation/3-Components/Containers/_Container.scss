@@ -1,0 +1,83 @@
+
+// ---------- Base container ---------- //
+
+.Container {
+  display: block;
+  padding-left: $paddingLeft--s;
+  padding-right: $paddingRight--s;
+}
+
+// Header
+.Container--header {
+
+  background: palette( gray, xx-light );
+  border-bottom: 1px solid palette( gray, x-light );
+  padding: 0;
+
+}
+
+// Extra large
+.ContainerXL {
+
+  padding: $paddingTop--xl $paddingRight--s $paddingBottom--xl $paddingLeft--s;
+
+  @include mediaQueries( medium ) {
+    padding: $paddingTop--xl--bpm $paddingRight--s--bpm $paddingBottom--xl--bpm $paddingLeft--s--bpm;
+  }
+
+  @include mediaQueries( small ) {
+    padding: $paddingTop--xl--bps $paddingRight--s--bps $paddingBottom--xl--bps $paddingLeft--s--bps;
+  }
+  
+}
+
+.ContainerXL--standard {
+
+  background: inherit;
+
+}
+
+.ContainerXL--borderB {
+
+  background: inherit;
+  border-bottom: 1px solid palette( gray, x-light );
+
+}
+
+
+// Large
+.ContainerL {
+  
+  padding: $paddingTop--l $paddingRight--s $paddingBottom--l $paddingLeft--s;
+  
+  @include mediaQueries( medium ) {
+    padding: $paddingTop--l--bpm $paddingRight--s--bpm $paddingBottom--l--bpm $paddingLeft--s--bpm;
+  }
+
+  @include mediaQueries( small ) {
+    padding: $paddingTop--l--bps $paddingRight--s--bps $paddingBottom--l--bps $paddingLeft--s--bps;
+  }
+
+}
+
+.ContainerL--borderB {
+
+  background: inherit;
+  border-bottom: 1px solid palette( gray, x-light );
+
+}
+
+.ContainerL--borderTRBL {
+
+  background: inherit;
+  border: 1px solid palette( gray, light );
+
+}
+
+// Footer
+.Container--footer {
+
+  background: palette( gray, xx-light );
+  border-top: 1px solid palette( gray, x-light );
+  
+}

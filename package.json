@@ -26,6 +26,7 @@
     "gulp-uglifyjs": "*",
     "gulp-util": "*",
     "gulp-watch": "*",
+    "jshint": "^2.9.2",
     "jshint-stylish": "*",
     "vinyl-ftp": "*"
   }
